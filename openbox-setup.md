@@ -28,12 +28,12 @@ tint2 &
 feh --bg-scale /home/oca/Pictures/linuxmint-sonya/mbandoch_alberta.jpg
 ```
 
-## 3. Set the Application Menu of Openbox
+## 2. Set the Application Menu of Openbox
 - File: `/etc/xdg/openbox/menu.xml` tell us the menu is set by `openbox-pipemenu`.
 - Run `openbox-pipemenu` and redirect into a new file `~/.config/openbox/menu.xml`.
 - The `menu.xml` file will work.
 
-### 3.1 Set the `menu.xml` File
+### 2.1 Set the `menu.xml` File
 - Use the indentation `(number of space)` to control menu levels.
 - Show an example here:   
 
@@ -49,14 +49,14 @@ feh --bg-scale /home/oca/Pictures/linuxmint-sonya/mbandoch_alberta.jpg
 </openbox_menu ...>		# This line must be the end of menu.xml file
 ```
 
-## 4. Fonts
+## 3. Fonts
 > Mainly for the `terminal and kate` text editor:  
 > Font name: `Latin Modern Mono` , 10, regular  
 
-## 5. Auto Mount
+## 4. Auto Mount
 ### 5.1 Check the UUID of Your Disk
 > `sudo blkid  (password)` will check the UUID of your disk, remember it.  
 
-### 5.2 Add It to the Mount Setting File
+### 4.2 Add It to the Mount Setting File
 > `UUID=6450843B50841648   /run/media/oca/6450843B50841648 auto    nosuid,nodev,nofail,x-gvfs-show 0 2`  
 > UUID can be find from the 5.1	mount it to the `/run` folder	auto format	other setting and two number as shown  
