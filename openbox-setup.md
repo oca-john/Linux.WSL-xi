@@ -39,13 +39,13 @@ feh --bg-scale /home/oca/Pictures/linuxmint-sonya/mbandoch_alberta.jpg
 
 ```
 <openbox_menu ...>		# This line must be the head of menu.xml file
- <menu id="prog" label="program">				# 1 spaces means menu
+ <menu id="prog" label="program">					# 1 spaces means menu
   <item label="program">						# 2 spaces means item
    <action name="Execute">						# 3 spaces means action
     <command>kate</command>						# 4 spaces means command
    </action>
-  </item>				# End of program item
- </menu>				# End of a submenu
+  </item>			# End of program item
+ </menu>			# End of a submenu
 </openbox_menu ...>		# This line must be the end of menu.xml file
 ```
 
