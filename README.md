@@ -1,2 +1,2 @@
-# linux-env
-build my own linux environment, there is some records.
+# linux environment building
+Build my own linux environment, there is some records.
