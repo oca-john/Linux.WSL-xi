@@ -1,5 +1,5 @@
 # Computing Environment Building
-> Build my own linux environment, there is some records.
+> Build my own computing environment, there is some records.
 ## 1. Linux Environment
 ### Lnx-Change-Boot-Mode.md
 - Set text mode as the default mode to enter you opensuse. 
