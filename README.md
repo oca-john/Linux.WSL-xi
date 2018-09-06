@@ -1,19 +1,19 @@
 # Computing Environment Building
 > Build my own computing environment, there is some records.
 ## 1. Linux Environment
-### Lnx-Change-Boot-Mode.md
+### Change-Boot-Mode.md
 - Set text mode as the default mode to enter you opensuse. 
 - As openSUSE use the systemd to control it, that is different as the init levels, which confused me such a long time. 
 - Just the `systemctl` tool.
 - Now, it's ok.
 
-### Lnx-Openbox-Setup
+### Openbox-Setup
 - Docky as dock, Tint2 as the panel, Feh to set wallpaper.
 
-### Lnx-Run-Firefox-in-CML
+### Run-Firefox-in-CML
 - Make a shortcut of Firefox, and also for other application, for you can run an application quickly in command line, like konsole. 
 
-### Lnx-Window-Maker-Setup
+### Window-Maker-Setup
 - Setting the system dock, Define the menu, Control the Color of window.
 
 ## 2. Windows Environment
