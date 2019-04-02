@@ -4,7 +4,7 @@
 ### install_GRUB2_from_rescue_mode.md	
 - opensuse or gecko linux U-disk  
 - enter the rescue-mode  
-- mount related diskpart  
+- check and mount linux-related diskpart  
 - mount grub2-related diskpart  
 - produce the grub.cfg file  
 - install the grub2 into /dev/sda  
