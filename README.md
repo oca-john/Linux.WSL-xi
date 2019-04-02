@@ -1,6 +1,14 @@
 # Computing Environment Building
 > Build my own computing environment, there is some records.
 ## 1. Linux Environment
+### install_GRUB2_from_rescue_mode.md	
+- opensuse or gecko linux U-disk  
+- enter the rescue-mode  
+- mount related diskpart  
+- mount grub2-related diskpart  
+- produce the grub.cfg file  
+- install the grub2 into /dev/sda  
+
 ### Change-Boot-Mode.md
 - Set text mode as the default mode to enter you opensuse. 
 - As openSUSE use the systemd to control it, that is different as the init levels, which confused me such a long time. 
