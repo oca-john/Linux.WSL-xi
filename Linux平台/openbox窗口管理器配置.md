@@ -1,7 +1,7 @@
-# Openbox Setup
+# openbox Setup
 > Please setup the openbox environment with the user's setup files in `~/.config/openbox/`.  
 
-## 1. Programs Auto Login Openbox
+## 1. Programs Auto Login openbox
 - File: `~/.config/openbox/autostart`.
 - Codes: write the model like `program_name &` in the setup file will make a program auto login.
 
