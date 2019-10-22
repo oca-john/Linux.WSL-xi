@@ -1,13 +1,14 @@
-# Computing Environment Building
-> Build my own computing environment, there is some records.
-## 1. Linux Environment
-### install_GRUB2_from_rescue_mode.md	
-- opensuse or gecko linux U-disk  
-- enter the rescue-mode  
-- check and mount linux-related diskpart  
-- mount grub2-related diskpart  
-- produce the grub.cfg file  
-- install the grub2 into /dev/sda  
+# 计算环境搭建
+> 本页面用于记录计算环境搭建的过程。
+## 1. Linux 运行环境
+### 从安全模式下安装GRUB2.md
+- 在系统出现问题时，openSUSE可以利用“启动本地Linux”功能实现修复，但部分情况下，此功能无法正确识别本地Linux，需要手动重装GRUB2；  
+- 需要Host操作系统为openSUSE，或基于openSUSE的系统，如Gecko Linux；  
+- 先进入急救模式；  
+- 检查并挂载Linux相关的分区；  
+- 挂载GRUB2相关的分区；  
+- 生成grub.cfg文件；  
+- 安装grub2到/dev/sda；  
 
 ### Change-Boot-Mode.md
 - Set text mode as the default mode to enter you opensuse. 
