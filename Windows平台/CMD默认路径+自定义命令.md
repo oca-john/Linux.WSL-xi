@@ -6,6 +6,7 @@
 ## 1.3 新建字符串值/String Value
 - 新建字串值，重命名为`autorun`，值为`cd /d D:\path\to\your\directory` 
 ## 1.4 重开CMD
+
 # 2. CMD自定义命令
 - 类似于Linux `alias yourcmd=oldcmd`  
 - Win-CMD中键入 `doskey yourcmd=oldcmd` 即可创建自定义的命令。  
