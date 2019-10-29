@@ -11,24 +11,11 @@
 - 生成grub.cfg文件；  
 - 安装grub2到/dev/sda；  
 
-### 修改系统启动方式（级别）
+### 修改系统启动方式(级别)
 - 设置openSUSE默认以文本界面登录；  
 - 由于openSUSE采用systemd控制启动过程，使用systemctl修改即可；  
 - 直接在终端键入`systemctl get-default`来查询当前启动方式；
 - 键入`systemctl set-default multi-user.target`将启动方式修改为文本界面启动；  
-
-### 用命令行打开Firefox
-- 为Firefox制作命令行链接（/usr/bin/...），同时适用于其他应用；  
-- 可以适用命令行从任何终端启动该应用；  
-- 本质是软链接`ln -s /home/xx/bin/apps/firefox /usr/bin/firefox`；
-
-### Openbox窗口管理器配置
-- 使用Docky作为泊槽，Tint2作为面板，Feh来管理桌面壁纸；  
-
-### Window-Maker窗口管理器配置
-- WM环境需要自己定义泊槽位置以及应用；
-- 从设置中心定义界面颜色；
-- 从设置中心自定义桌面菜单；
 
 ## 2. Windows环境下的类Linux环境
 ### CMD是Windows下默认的命令工具，通过PATH变量配置实现对命令行工具的调用
