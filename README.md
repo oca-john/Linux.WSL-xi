@@ -3,8 +3,6 @@
 
 ## 1. Linux 运行环境
 ### 从安全模式下安装GRUB2
-- 在系统出现问题时，openSUSE可以利用“启动本地Linux”功能实现修复，但部分情况下，此功能无法正确识别本地Linux，需要手动重装GRUB2；  
-- 需要Host操作系统为openSUSE，或基于openSUSE的系统，如Gecko Linux；  
 - 先进入急救模式；  
 - 检查并挂载Linux相关的分区；  
 - 挂载GRUB2相关的分区；  
@@ -12,7 +10,6 @@
 - 安装grub2到/dev/sda；  
 
 ### 修改系统启动方式(级别)
-- 设置openSUSE默认以文本界面登录，使用systemctl修改即可；  
 - 直接在终端键入`systemctl get-default`来查询当前启动方式；
 - 键入`systemctl set-default multi-user.target`将启动方式修改为文本界面启动；  
 
