@@ -1,4 +1,4 @@
-# win10-openSUSE子系统
+# Win10子系统-openSUSE
 - win10的子系统中使用openSUSE作为子系统，win的所有盘符默认被挂载到/mnt目录下，可以利用软链接实现文件管理的无缝交互  
 - 在win10的cmd对话框中可以通过bash命令无缝切换到openSUSE子系统中  
 - 使用win10的多数资源和优势平台，同时借助灵活的openSUSE来实现流程开发和数据流处理  
