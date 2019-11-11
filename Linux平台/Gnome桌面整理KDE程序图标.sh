@@ -1,4 +1,7 @@
 #!/usr/bin/sh
+# 用于在Gnome环境下将包括KDE程序集在内的无关程序移入下述文件夹中，以节省程序界面的空间。
+# Gnome本身将在3.34版本优化此项目，支持在程序界面拖动图标来创建文件夹，在host系统更新到3.34版本前仍使用此方法有效。
+
 # Utilities:
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/ apps "['org.kde.falkon.desktop','git-gui.desktop','org.gnome.Screenshot.desktop','com.teamviewer.TeamViewer.desktop','org.gnome.DiskUtility.desktop','org.gnome.Calculator.desktop','masterpdfeditor5.desktop','org.gnome.bijiben.desktop','calc.desktop','impress.desktop','writer.desktop','gnome-system-monitor.desktop','gnome-tweak-tool.desktop','org.gnome.Software.desktop','vinagre.desktop']"
 
