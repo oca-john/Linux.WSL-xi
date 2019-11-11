@@ -45,7 +45,7 @@
 > `git checkout newbranch` : 切换到新建分支  
 > `git checkout master && git merge -m "merge newbranch branch" newbranch` : 切到主分支，合并新建分支  
 > `git diff` : 查看最近的修改与上一个提交版本间的差异  
-<!-- 如果主次分支修改了一个文件，提交时会冲突。先在主分支修改并提交，切到次分支修改并提交，切到主分支进行合并。-->  
+`<!-- 如果主次分支修改了一个文件，提交时会冲突。先在主分支修改并提交，切到次分支修改并提交，切到主分支进行合并。-->`  
 > `git reset --hard HEAD^` : 撤销一次合并  
 
 ## 查看Git日志
