@@ -105,19 +105,19 @@ markdown会用
 
 ## 二、区段元素
 ### 7.文本强调
-Markdown 使用星号（\*）和底线（\_）作为标记强调字词的符号。
+Markdown 使用`星号（\*）`和`底线（\_）`作为标记强调字词的符号。
 
-被 \* 或 \_ 包围的字词会被转成用 `<em> 斜体`。
+被` \* 或 \_ `包围的字词会被转成用 `<em> 斜体`。
 ```
 *斜体*
 _斜体_
 ```
-用两个 \* 或\_ 包起来的话，则会被转成<strong>加粗标记。
+用两个` \* 或\_ `包起来的话，则会被转成`<strong>加粗`标记。
 ```
 **粗体**
 __粗体__
 ```
-用三个 \* 或\_ 包起来的话，则会被转成加粗斜体。
+用三个` \* 或\_ `包起来的话，则会被转成加粗斜体。
 ```
 ***粗斜体***
 ___粗斜体___
@@ -142,23 +142,21 @@ ___粗斜体___
 行内式：
 > 链接文字都是用 [方括号] 来标记，在方块括号后面紧接着圆括号并插入网址链接即可。link括号内可用双引号将链接title文字引入。  
 ```
-``This is [an example](http://example.com/ "Title") inline link.  
-[This link](http://example.net/) has no title attribute.``
+This is [an example](http://example.com/ "Title") inline link.  
+[This link](http://example.net/) has no title attribute.
 ```
 参考式：
 > 在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记。两个方括号之间可以加空格。  
 ```
-``This is [an example][id] reference-style link.  
-[id]: http://example.com/  "Optional Title Here"  注意：此处的[id]中的西文不区分大小写。``
+This is [an example][id] reference-style link.  
+[id]: http://example.com/  "Optional Title Here"  注意：此处的[id]中的西文不区分大小写。
 ```
 隐式：
 > 隐式链接标记功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号。  
 ```
-`[Google][]  此处的[]相当于[Google]`  
-`然后定义链接内容：[Google]: http://google.com/`
+[Google][]  此处的[]相当于[Google]  
+然后定义链接内容：[Google]: http://google.com/
 ```
----
-
 Inline-style 内嵌方式：  
 ```
 [W3Cschool](http://www.w3cschool.cn/ "W3Cschool")  
@@ -176,24 +174,22 @@ Reference-style 引用方式：
 
 ### 10.链入图片
 行内式：  
-```
 叹号开头，接方括号是显示名，接元括号是图片地址，可选title。  
+```
 > ![Alt text](/path/to/img.jpg "Optional title")
 ```
-
 参考式：  
 ```
 > ![Alt text][id]  
 [id]: url/to/image  "Optional title attribute"
-
 若需要指定图片的宽高，需要普通html语法中的<img>标签来实现。
 ```
----
-
 nline-style 内嵌方式：  
 ```
 ![替代文字](http://statics.w3cschool.cn/images/w3c/index-logo.png "标题文字")  
+```
 Reference-style 引用方式：  
+```
 ![替代文字][logo]  
 [logo]: http://statics.w3cschool.cn/images/w3c/index-logo.png "标题文字"  
 ```
