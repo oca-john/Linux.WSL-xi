@@ -1,4 +1,5 @@
 # Markdown标记语言-完整-ZHXI
+笔记主要参考 `http://www.w3cschool.cn` 整理学习
 
 ## 一、区块元素
 ### 1.标题部分
