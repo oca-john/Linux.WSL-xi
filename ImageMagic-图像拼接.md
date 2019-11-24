@@ -34,7 +34,7 @@ b.将代码粘贴到文本编辑器，存为sh脚本，在终端以sh解释器�
 CONCATENATE("*f",B1,"d0.TIF")
 转换后“*f239d0.TIF”
 ```
-## 8. 整合240个小图为一个大图，默认图片之间无重叠
+## 8. 整合240个小图为一个大图，小图以螺旋状收敛，默认图片之间无重叠
 ``` sh
 mkdir results
 convert +append	*f239d0.TIF	*f238d0.TIF	*f237d0.TIF	*f236d0.TIF	*f235d0.TIF	*f234d0.TIF	*f233d0.TIF	*f232d0.TIF	*f231d0.TIF	*f230d0.TIF	*f229d0.TIF	*f228d0.TIF	*f227d0.TIF	*f226d0.TIF	*f225d0.TIF	*f224d0.TIF	*f223d0.TIF	*f222d0.TIF	*f221d0.TIF	*f220d0.TIF	./results/1hang.TIF
