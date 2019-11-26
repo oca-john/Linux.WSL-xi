@@ -1,4 +1,4 @@
-# LaTex中文书写环境搭建
+# LaTeX中文书写环境搭建
 
 ## 1. TexLive + TexStudio平台部署
 
