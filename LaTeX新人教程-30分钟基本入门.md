@@ -12,8 +12,6 @@
 
 ------
 
-下面是教程正文。（正文最后应大家要求增添了附录）
-
 ## 1. LaTeX软件的安装
 
 参考“LaTeX中文书写环境搭建”。
@@ -27,7 +25,7 @@
 ``` latex
 \documentclass{article}
 \begin{document}
-hello, LaTeX!
+Hello, LaTeX!
 \end{document}
 ```
 
@@ -43,7 +41,7 @@ hello, LaTeX!
 \title{The Title}
 \begin{document}
 \maketitle
-hello, world % This is comment
+Hello, LaTeX! % This is comment
 \end{document}
 ```
 
