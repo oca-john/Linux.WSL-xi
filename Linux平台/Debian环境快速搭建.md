@@ -14,16 +14,16 @@ gedit /etc/sudoers      编辑sudoers列表
 chmod -w /etc/sudoers   改为只读
 ```
 
-## 3. 编辑sudoers列表的内容
+## 2.x 编辑sudoers列表的内容
 ``` sh
 root ALL=(ALL:ALL) ALL
 oc   ALL=(ALL:ALL) ALL
 ```
 
-## 4. 修改软件源
+## 3. 修改软件源
 `sudo gedit /etc/apt/sources.list`  打开源列表
 
-## 5. sources.list列表内容
+## 3.x sources.list列表内容
 ``` sh
 deb https://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
 deb https://mirrors.ustc.edu.cn/debian/ buster-updates main contrib non-free
