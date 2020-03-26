@@ -6,7 +6,7 @@
 ## 1.系统
 1.系统安装（KDE -> **Gnome** -> Xfce -> LXDE）；
 
-## 1.1 将普通用户oc加入sudo组
+## 2. 将普通用户oc加入sudo组
 ``` sh
 su                      需要密码
 chmod +w /etc/sudoers   改为可写
@@ -14,16 +14,16 @@ gedit /etc/sudoers      编辑sudoers列表
 chmod -w /etc/sudoers   改为只读
 ```
 
-## 1.2 编辑sudoers列表的内容
+## 3. 编辑sudoers列表的内容
 ``` sh
 root ALL=(ALL:ALL) ALL
 oc   ALL=(ALL:ALL) ALL
 ```
 
-## 2.1 修改软件源
+## 4. 修改软件源
 `sudo gedit /etc/apt/sources.list`  打开源列表
 
-## 2.2 sources.list列表内容
+## 5. sources.list列表内容
 ``` sh
 deb https://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
 deb https://mirrors.ustc.edu.cn/debian/ buster-updates main contrib non-free
