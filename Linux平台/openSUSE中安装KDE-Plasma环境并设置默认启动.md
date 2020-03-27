@@ -1,12 +1,12 @@
-# openSUSE中安装KDE环境并设置默认启动
+# openSUSE中安装KDE-Plasma环境并设置默认启动
 
 ## 0.基础环境
 可以是任何安装好的集成桌面环境，也可以是icewm等基本的窗口化桌面环境，或者nonedesktop模式；
 
-## 1.使用官方源安装KDE环境
+## 1.使用官方源安装KDE-Plasma环境
 sudo zypper in patterns-kde-kde
 
-## 2.创建.xinitrc（以startx启动mate）
+## 2.创建.xinitrc（以startx启动KDE-Plasma）
 echo "exec /usr/bin/startkde" >> ~/.xinitrc             # 将执行指定DE的命令打印出来，并追加到`.xinitrc`文件末尾
 
 ## 3.修改启动方式
