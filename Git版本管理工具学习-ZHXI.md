@@ -1,6 +1,6 @@
-# 1. Git版本管理工具学习-ZHXI
+# Git版本管理工具学习-ZHXI
 
-## 开头总结
+## 1. 开头总结
 
 |命令|解释|
 |----|----|
@@ -19,24 +19,24 @@
 
 - 高亮颜色定义`<font color=DeepSkyBlue>zhelishilanse</font>`
 
-## 在全局配置Git的作者信息
+## 2. 在全局配置Git的作者信息
 
 - `git config --global user.name "nameofuser"` : 修改作者姓名  
 - `git config --global user.email "emailofuser"` : 修改作者邮箱  
 - `--global`配置的内容存放于用户目录，全局生效；无全局标签则放在当前目录  
 
-## 克隆或初始化一个仓库
+## 3. 克隆或初始化一个仓库
 
 > `git clone url-adress` : 克隆远程仓库到本地  
 > `mkdir code-dir && git init` : 创建新目录，并初始化仓库  
 
-## 创建文件-加入缓存区-提交修改
+## 4. 创建文件-加入缓存区-提交修改
 
 > `touch file1` : 创建文件  
 > `git add file1 (git add .)` : 加入缓存区  
 > `git commit -m "remark content here"` : 提交修改到本地仓库  
 
-## 分支操作
+## 5. 分支操作
 
 > `git branch newbranch` : 新建分支  
 > `git branch -d newbranch` : 删除(已被合并的)新建分支  
@@ -48,7 +48,7 @@
 `<!-- 如果主次分支修改了一个文件，提交时会冲突。先在主分支修改并提交，切到次分支修改并提交，切到主分支进行合并。-->`  
 > `git reset --hard HEAD^` : 撤销一次合并  
 
-## 查看Git日志
+## 6. 查看Git日志
 
 > `git log` : 逐步显示Git log记录  
 > `git log --stat` : 日志统计，显示那些文件修改了多少行内容  
