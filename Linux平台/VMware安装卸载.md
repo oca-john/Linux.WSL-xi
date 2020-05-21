@@ -8,4 +8,5 @@
 - 输入序列号，以获得许可
 
 ## VMware卸载
-- `vmware-installer -u vmware-workstation`，以卸载相关组件
+- `sudo vmware-installer -u vmware-workstation`，以卸载相关组件
+- 卸载时需要确认是否保留配置文件，输入`no`以删除所有配置文件
