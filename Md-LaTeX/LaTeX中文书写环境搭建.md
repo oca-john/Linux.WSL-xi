@@ -18,8 +18,8 @@ LaTex本质上是以标记文本的形式来写文章(Md就可以理解为简化
 
 ### 1.3 其他组合：
 
-- TexLive + **TexStudio**(带PDF预览)
-- TexLive + **Lyx** + PDF预览
+- TexLive + **TexStudio**(带PDF预览)【正常可用】
+- TexLive + **Lyx** + PDF预览【正常可用】
 - TeXLive + VS Code + LaTeX Workshop(插件)
 - TeXLive + Emacs + AUCTex + PDF预览
 
