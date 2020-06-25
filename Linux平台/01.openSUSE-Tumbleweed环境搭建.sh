@@ -1,9 +1,8 @@
 # openSUSE-Tumbleweed环境搭建
 
-- all files are included in suse.leap.preset folder
-- just execute the bash script, and everything will be done
+# all files are included in suse.leap.preset folder
+# just execute the bash script, and everything will be done
 
-``` sh
 # install from repos
 printf "softwares are being installed by repos\n"
 sudo zypper in dia goldendict imagewriter kcolorchooser lyx marble plasma5-desktop-emojier scribus texstudio virtualbox cmake git patterns-kde-devel_qt5  libqt5-creator python3-numpy python3-scipy python3-matplotlib python3-seaborn java-1_8_0-openjdk-devel amarok audacity darktable gimp imagej imagemagick inkscape kdenlive krita rawtherapee smplayer vlc chromium filezilla teams teamviewer-suse
@@ -61,4 +60,3 @@ printf "dict of goldendict are installed\n"
 cd ../
 
 printf "everything's ok!\n"
-```
