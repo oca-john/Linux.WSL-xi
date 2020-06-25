@@ -10,25 +10,23 @@
 # 3. echo打印字符串可以不加引号（也可以加）。
 # 4. 字符串连接，直接在调用时依次出现即可。
 
-bianliang1="zhang"
-echo "your 1st name is" ${bianliang1}
-
-bianliang2="dier"
-echo your 2nd name is $bianliang2
-
-echo your names are 1st:$bianliang1 2nd:${bianliang2}
-
+var1="zhang"                                          # 赋值符前后不能有空格，变量赋值不加$
+echo "my name is $var1\n"                             # 变量调用要加$，双引号内变量内插
+var2="25"
+echo "my age is $var2\n"
+printf "my name is: $var1, and my age is: $var2\n"    # printf与echo作用相同
 
 # 5. 打印字符串长度，在{}括起来的变量名内增加#号，用于计算字串长度。
 
-zichuanchangdu="ceshizifuchuan"
-echo ${#zichuanchangdu} # 加#直接计算长度（类似perl#获得末位下标）
+length="ceshizifuchuan"
+echo ${#length}                                       # 加#直接计算长度（类似perl#获得末位下标）
+printf ${#length}                                     # 用{}标定变量名边界，避免混淆
 
 # 6. 单引号不支持内插，双引号支持内插。
 # 7. 变量名后加:和字串下标，可提取部分字串。
 
-zichuantiqu="ceshi de dai tiqu zichuan"
-echo ${zichuantiqu:1:12} # 提取zichuantiqu的1到12位的字符
+pick="ceshi de dai tiqu zichuan"
+echo ${pick:1:12}                                     # 提取zichuantiqu的1到12位的字符
 
-zichuanchazhao="ceshi de dai chazhao zichuan"
-echo `expr index "$zichuanchazhao" is`
+find="ceshi de dai chazhao zichuan"
+echo `expr index "$find" is`
