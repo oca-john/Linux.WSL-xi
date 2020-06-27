@@ -1,3 +1,4 @@
+#!/usr/bin/sh
 # openSUSE-Tumbleweed环境搭建
 
 # all files are included in suse.leap.preset folder
