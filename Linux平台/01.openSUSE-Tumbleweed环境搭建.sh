@@ -43,13 +43,14 @@ printf "changing dir into fonts\n"
 cd fonts
 printf "copying fonts into system folder\n"
 sudo cp *.ttf *.TTF *.ttc /usr/share/fonts/truetype/
-printf "that's ok!\n"
+printf "fonts are ok!\n"
 cd ../
 
 # multimedia codecs
 sudo zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
 sudo zypper in --allow-vendor-change ffmpeg lame gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-ugly-orig-addon gstreamer-plugins-libav libavdevice56 libavdevice58 libdvdcss2 vlc-codecs
 sudo zypper up --from packman --allow-vendor-change
+printf "multimedia codecs are installed\n"
 
 # other pkgs is in baks
 # here is goldendict dicts, need to set it mannully.
