@@ -1,7 +1,8 @@
+#!/usr/bin/sh
 # openSUSE中安装Gnome环境并设置默认启动
 
 ## 0.基础环境
-可以是任何安装好的集成桌面环境，也可以是icewm等基本的窗口化桌面环境，或者nonedesktop模式；
+# 可以是任何安装好的集成桌面环境，也可以是icewm等基本的窗口化桌面环境，或者nonedesktop模式；
 
 ## 1.使用官方源安装Gnome环境
 sudo zypper in patterns-gnome-gnome
