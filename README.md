@@ -1,4 +1,4 @@
-# LinuxRuntime搭建
+# Linux.WSL-xi
 本项目用于记录类Linux计算环境搭建的过程，常用Linux命令，常见Linux工具用法，和其他工具软件的学习笔记。
 
 ## 1. Linux 运行环境
