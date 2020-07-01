@@ -9,6 +9,13 @@ printf "softwares are being installed by repos\n"
 sudo zypper in dia goldendict imagewriter kcolorchooser lyx marble plasma5-desktop-emojier scribus texstudio virtualbox cmake git patterns-kde-devel_qt5  libqt5-creator python3-numpy python3-scipy python3-matplotlib python3-seaborn java-1_8_0-openjdk-devel amarok audacity darktable gimp imagej imagemagick inkscape kdenlive krita rawtherapee smplayer vlc chromium filezilla teams teamviewer-suse
 printf "repos' softwares are installed\n"
 
+# configure the python3 and pip3
+sudo rm /usr/bin/python
+sudo ln -s python3.* /usr/bin/python
+sudo rm /usr/bin/pip
+sudo ln -s pip3 /usr/bin/pip
+# use `-i https://pypi.tuna.tsinghua.edu.cn/simple` to speed up the installation
+sudo pip install torch==1.5.1+cpu torchvision==0.6.1+cpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # install from rpms
 printf "system are installing rpms\n"
@@ -16,7 +23,6 @@ cd rpms
 sudo zypper in ./*.rpm
 printf "rpms are installed\n"
 cd ../
-
 
 # install from tar_pkgs
 printf "softwares from tar packages are being installed by repos\n"
@@ -34,7 +40,6 @@ cp ./*.AppImage /home/oca/bin/appimages
 sudo chmod a+x /home/oca/bin/appimages/*.AppImage
 printf "appimages are installed\n"
 cd ../
-
 
 # install fonts
 cd font_script
