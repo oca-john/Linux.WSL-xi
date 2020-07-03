@@ -3,10 +3,13 @@
 
 # all files are included in suse.leap.preset folder
 # just execute the bash script, and everything will be done
+# openSUSE命令中若直接带-y参数，只能跟在zypper的具体命令之后，不能放在最后
+# 如，`sudo zypper in -y emacs-nox`
+# 而Debian和CentOS中可以放在命令后，也可以放在对象列表的最后
 
 # install from repos
 printf "softwares are being installed by repos\n"
-sudo zypper in dia goldendict imagewriter kcolorchooser lyx marble plasma5-desktop-emojier scribus texstudio virtualbox cmake git patterns-kde-devel_qt5  libqt5-creator python3-numpy python3-scipy python3-matplotlib python3-seaborn java-1_8_0-openjdk-devel amarok audacity darktable gimp imagej imagemagick inkscape kdenlive krita rawtherapee smplayer vlc chromium filezilla teams teamviewer-suse
+sudo zypper in -y dia goldendict imagewriter kcolorchooser lyx marble plasma5-desktop-emojier scribus texstudio virtualbox cmake git patterns-kde-devel_qt5  libqt5-creator python3-numpy python3-scipy python3-matplotlib python3-seaborn java-1_8_0-openjdk-devel amarok audacity darktable gimp imagej imagemagick inkscape kdenlive krita rawtherapee smplayer vlc chromium filezilla teams teamviewer-suse
 printf "repos' softwares are installed\n"
 
 # configure the python3 and pip3
@@ -23,7 +26,7 @@ printf "python3, pip3, pytorch are installed well\n"
 # install from rpms
 printf "system are installing rpms\n"
 cd rpms
-sudo zypper in ./*.rpm
+sudo zypper in -y ./*.rpm
 printf "rpms are installed\n"
 cd ../
 
@@ -57,7 +60,7 @@ cd ../
 
 # multimedia codecs
 sudo zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
-sudo zypper in --allow-vendor-change ffmpeg lame gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-ugly-orig-addon gstreamer-plugins-libav libavdevice56 libavdevice58 libdvdcss2 vlc-codecs
+sudo zypper in -y --allow-vendor-change ffmpeg lame gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-ugly-orig-addon gstreamer-plugins-libav libavdevice56 libavdevice58 libdvdcss2 vlc-codecs
 sudo zypper up --from packman --allow-vendor-change
 printf "multimedia codecs are installed\n"
 
