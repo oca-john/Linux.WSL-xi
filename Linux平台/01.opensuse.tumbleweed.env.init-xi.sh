@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-# opensuse.tumbleweed.env.init
+# opensuse.tumbleweed.env.init-xi
 
 # all files are included in suse.leap.preset folder
 # just execute the bash script, and everything will be done
