@@ -1,4 +1,4 @@
-# opensuse_tumbleweed-rtl8821ce驱动问题
+# opensuse.tumbleweed.rtl8821ce.driver-xi
 
 ## 问题背景：
 
