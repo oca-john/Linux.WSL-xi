@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-# WSL-Ubuntu初始化
+# wsl.ubuntu.init-xi
 
 # openSUSE命令中若直接带-y参数，只能跟在zypper的具体命令之后，不能放在最后
 # 如，`sudo zypper in -y emacs-nox`
