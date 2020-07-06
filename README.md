@@ -17,7 +17,7 @@
 GitBash在安装好perl之后可以自动初始化perl环境，因为perl不需要交互环境；而python和r语言需要使用交互方式，需要额外配置，即增加详细的参数来实现。  
 通过Git安装目录下etc目录的bash.bashrc文件进行运行环境配置，主要是增加别名，方法与linux环境完全一致，但赋值的运行方式需要特别注意。  
 
-## 3. vscode.code-runner运行wsl
+## 3. vscode.code-runner.wsl-linux
 ### 软件环境
 控制面板中开启wsl功能，微软商店安装openSUSE或Ubuntu发行版。  
 安装vscode软件以及remote-wsl, code-runner插件。  
