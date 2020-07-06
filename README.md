@@ -21,3 +21,23 @@
 #### win10中建立openSUSE子系统是不错的融合方式
 - openSUSE子系统保留了简化的YaST工具，因此在管理上完胜Fedora和Ubuntu之类的发行版。 
 - win10和openSUSE子系统实现了文件管理融合，命令行尚未互通（但从cmd中可以切换至openSUSE的bash），两系统之间可以使用软链接建立联系
+
+## 4. vscode.code-runner运行wsl
+### 软件环境
+控制面板中开启wsl功能，微软商店安装openSUSE或Ubuntu发行版。  
+安装vscode软件以及remote-wsl, code-runner插件。  
+
+### 工具连接
+#### 发行版和默认终端解释器
+打开vscode，在remote-wsl插件中选择默认的发行版，在terminal中选择默认解释器为wsl（即指向特定发行版的bash）。  
+
+#### 编辑器运行和终端解释器
+编辑器部分默认采用cmd，搜寻windows下的语言环境。  
+F1打开设置搜索框-搜索setting.json （文件-预设-设置-搜索setting.json-edit.in.setting.json）。  
+
+#### setting-json编辑
+``` json
+    "code-runner.defaultLanguage": "python"		# 插件使用的默认语言
+    "code-runner.runInTerminal": true,			# 编辑器代码是否用终端解释
+    "code-runner.terminalRoot": "/mnt/",		# 终端解释器的root目录
+```
