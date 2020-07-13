@@ -7,7 +7,7 @@
 # 需写作，`sudo apt/dnf install -y emacs-nox`或`sudo apt/dnf install emacs-nox -y`
 
 printf "softwares are being installed by repos\n"
-sudo zypper in -y cmake git python3-numpy python3-scipy python3-matplotlib python3-seaborn python3-pyside2 python3-pylint
+sudo zypper in -y cmake git python3-matplotlib python3-numpy python3-pylint python3-pyside2 python3-seaborn python3-scipy
 printf "repos' softwares are installed\n"
 # java 1.8 暂不支持apt直接安装
 
