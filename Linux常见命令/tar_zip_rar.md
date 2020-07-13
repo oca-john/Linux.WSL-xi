@@ -8,6 +8,8 @@ tar.gz打包`tar -zcvf tar_pkg_name origin_folder`, 如`tar -zcvf tst.tar.gz ./t
 
 tar.gz解压`tar -zxvf tar_pkg_name`, 如`tar -zxvf tst.tar.gz`
 
+tar.xz解压`tar xvJf tar_pkg_name`, 如`tar xvJf tst.tar.xz`   # 因为tar外层的压缩方式不同，与上述解压方式也不同。
+
 ## unzip
 
 `unzip -n tst.zip -d ./`, 非覆盖方式，解压tst包，指定当前目录。
