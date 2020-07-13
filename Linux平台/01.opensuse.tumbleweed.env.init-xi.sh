@@ -10,7 +10,7 @@
 
 # install from repos
 printf "softwares are being installed by repos\n"
-sudo zypper in -y dia goldendict imagewriter kcolorchooser lyx marble plasma5-desktop-emojier scribus texstudio virtualbox cmake git patterns-kde-devel_qt5  libqt5-creator python3-numpy python3-scipy python3-matplotlib python3-seaborn python3-pyside2 python3-pylint java-1_8_0-openjdk-devel amarok audacity darktable gimp imagej imagemagick inkscape kdenlive krita rawtherapee smplayer vlc chromium filezilla teams teamviewer-suse
+sudo zypper in -y amarok audacity cmake chromium darktable dia filezilla gimp git goldendict imagej imagemagick imagewriter inkscape java-1_8_0-openjdk-devel kcolorchooser kdenlive krita libqt5-creator lyx marble patterns-kde-devel_qt5 plasma5-desktop-emojier python3-matplotlib python3-numpy python3-pylint python3-pyside2 python3-seaborn python3-scipy rawtherapee scribus smplayer teams teamviewer-suse texstudio virtualbox vlc
 printf "repos' softwares are installed\n"
 
 # configure the python3 and pip3
