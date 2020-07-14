@@ -17,3 +17,9 @@ sudo dnf upgrade  # 系统版本升级
 # 测试安装软件
 # 默认库中，Debian和openSUSE都能安装的neofetch，CentOS安装不了，安装了EPEL源之后则可以
 sudo dnf install neofetch -y
+
+# 基本的编程环境
+# c相关（测试）
+sudo dnf install gcc gcc-c++
+# python3相关（测试）
+sudo dnf install python3-pip python3-numpy python3-scipy python3-pandas python3-matplotlib python3-seaborn
