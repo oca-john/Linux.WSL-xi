@@ -2,18 +2,18 @@
 本项目用于记录类Linux计算环境搭建的过程，常用Linux命令，常见Linux工具用法，和其他工具软件的学习笔记。
 
 ## 1. Linux 运行环境
-#### 从安全模式下安装GRUB2
+### 从安全模式下安装GRUB2
 先进入急救模式，检查并挂载Linux相关的分区，挂载GRUB2相关的分区；  
 生成grub.cfg文件，安装grub2到/dev/sda；  
 
-#### 修改系统启动方式(级别)
+### 修改系统启动方式(级别)
 键入`systemctl set-default multi-user.target`将启动方式修改为文本界面启动；  
 
 ## 2. Windows环境下的类Linux环境
-#### CMD是Windows下默认的命令工具，通过PATH变量配置实现对命令行工具的调用
+### CMD是Windows下默认的命令工具，通过PATH变量配置实现对命令行工具的调用
 通过windows的PATH变量的配置，即可实现对perl, python, r语言的调用，可以实现大部分近似于linux的操作，当然dir取ls而代之的查看方式会不习惯。
 
-#### 用GitBash作为Windows环境下的类Linux环境
+### 用GitBash作为Windows环境下的类Linux环境
 GitBash在安装好perl之后可以自动初始化perl环境，因为perl不需要交互环境；而python和r语言需要使用交互方式，需要额外配置，即增加详细的参数来实现。  
 通过Git安装目录下etc目录的bash.bashrc文件进行运行环境配置，主要是增加别名，方法与linux环境完全一致，但赋值的运行方式需要特别注意。  
 
