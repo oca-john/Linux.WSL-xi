@@ -7,9 +7,12 @@
 # 实体机时，主要是检查驱动和网络开关，若gnome插件不工作，可通过nm-connection-editor编辑网络练级；
 # 虚拟机时，主要是检查网络开关和VM插件有没有安装；
 
+# 开启EPEL-方法1
+sudo dnf install epel-release-8-8.el8.noarch    # 通过dnf安装epel配置软件包，自动开启epel源
+
+# 开启EPEL-方法2
 # 配置EPEL 8软件源
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-
 # 升级，这与Debian一样，但不如openSUSE的up/dup
 sudo dnf update   # 软件列表升级
 sudo dnf upgrade  # 系统版本升级
