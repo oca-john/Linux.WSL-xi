@@ -74,3 +74,7 @@ printf "dict of goldendict are installed\n"
 cd ../
 
 printf "everything's ok!\n"
+
+# choose a desktop env: (KDE > Gnome > Xfce > Sway(i3))
+# shutdown some service: (anydesk, bluetooth, ...)
+
