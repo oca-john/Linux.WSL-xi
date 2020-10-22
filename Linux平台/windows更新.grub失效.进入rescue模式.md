@@ -2,7 +2,7 @@
 
 - 起因：windows更新后重启，进入rescue模式，无法正常引导grub2以及调用linux引导管理器
 
-### 1.查看当前grub指向那个分区
+### 1.查看当前grub指向哪个分区
 - `set`命令，显示当前grub指向的分区
 - `root`和`prefix`是引导相关的参数，看到当前分区的格式为`(hd0,msdos7)`或`(hd0,gtp10)`表示不同的磁盘类型(hp_probook是msdos类型)
 
