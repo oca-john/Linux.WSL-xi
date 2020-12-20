@@ -10,7 +10,7 @@
 终端可考虑使用 Windows Terminal。
 
 ## 3. MindSpore 安装
-`pip install https://ms-release.obs.cn-north-4.myhuaweicloud.com/1.0.1/MindSpore/cpu/ubuntu_x86/mindspore-1.0.1-cp37-cp37m-linux_x86_64.whl --trusted-host ms-release.obs.cn-north-4.myhuaweicloud.com -i https://pypi.tuna.tsinghua.edu.cn/simple`，安装。  
+`pip install https://ms-release.obs.cn-north-4.myhuaweicloud.com/1.0.1/MindSpore/cpu/windows_x64/mindspore-1.0.1-cp37-cp37m-win_amd64.whl --trusted-host ms-release.obs.cn-north-4.myhuaweicloud.com -i https://pypi.tuna.tsinghua.edu.cn/simple`，安装。  
 此时，装完了库，但由于运行环境问题，无法正确调用。  
 
 ## 4. numpy 库降级
