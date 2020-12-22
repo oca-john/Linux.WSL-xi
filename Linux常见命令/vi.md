@@ -1,4 +1,4 @@
-## vi
+# VI 常用命令与配置
 
 **vi命令**是UNIX操作系统和类UNIX操作系统中最通用的全屏幕纯文本编辑器。Linux中的vi编辑器叫vim，它是vi的增强版（vi Improved），与vi编辑器完全兼容，而且实现了很多增强功能。
 
@@ -6,6 +6,7 @@ vi编辑器支持编辑模式和命令模式，编辑模式下可以完成文本
 
 vi编辑器提供了丰富的内置命令，有些内置命令使用键盘组合键即可完成，有些内置命令则需要以冒号“：”开头输入。常用内置命令如下：
 
+## 常用命令
 ```vimrc
 Ctrl+u：向文件首翻半屏；
 Ctrl+d：向文件尾翻半屏；
@@ -41,7 +42,8 @@ O：在当前行前面插入一空行；
 :set nonumber：在命令模式下，用于在最左端不显示行号；
 ```
 
-```sh
+## 基本配置命令
+``` vimrc
 set nu                          " 显示行号
 syn on                          " 语法高亮
 set hlsearch                    " 高亮搜索结果
@@ -53,5 +55,16 @@ set tabstop=4                   " 制表符设为4格
 set softtabstop=4               " 软制表符设为4格
 set cursorline                  " 突出当前行
 set ruler                       " 状态栏标尺
+
+" 自动检测文件类型，并绑定执行按键
+filetype plugin on
+" 按 F5 执行当前 Python 代码"
+map <F5> :call PRUN()<CR>
+func! PRUN()
+    exec "w" 
+    if &filetype == 'python'
+        exec "!python %"
+    endif
+endfunc
 ```
 
