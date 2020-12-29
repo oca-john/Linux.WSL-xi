@@ -10,6 +10,9 @@
 键入`systemctl set-default multi-user.target`将启动方式修改为文本界面启动；  
 
 ## 2. Windows环境下的类Linux环境
+### Windows Terminal中配置WSL（openSUSE和Ubuntu）
+Windows Terminal中配置WSL（openSUSE和Ubuntu）用于默认的开发环境，与可视化相关的则用Conda进行配置，可调用Windows原生库进行绘图。
+
 ### CMD是Windows下默认的命令工具，通过PATH变量配置实现对命令行工具的调用
 通过windows的PATH变量的配置，即可实现对perl, python, r语言的调用，可以实现大部分近似于linux的操作，当然dir取ls而代之的查看方式会不习惯。
 
