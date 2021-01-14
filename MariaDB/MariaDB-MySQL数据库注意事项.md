@@ -20,11 +20,4 @@
 - 尝试用UPDATE命令更新密码，`UPDATE user SET password=password('root') WHERE user='root'`，失败(会引起E1348错误)；
 - 需要使用ALTER命令更新密码，`ALTER USER'root'@'localhost' IDENTIFIED BY 'root'`，成功；
 - 刷新权限，`flush privileges`；
-- 关键操作用root用户
-
-### 4. 数据库操作
-
-
-### 5. 
-
-
+- 关键操作用root用户；
