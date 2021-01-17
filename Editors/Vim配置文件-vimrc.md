@@ -1,7 +1,7 @@
 # VIM 配置文件积累
 
 ## 常用格式化显示和高亮
-```
+``` vim
 set nu                          " 显示行号
 syn on                          " 语法高亮
 set hlsearch                    " 高亮搜索结果
@@ -16,7 +16,7 @@ set ruler                       " 状态栏标尺
 ```
 
 ## 绑定运行程序快捷键
-```
+``` vim
 filetype plugin on
 " 按 F5 执行当前 Python 代码"
 map <F5> :call PRUN()<CR>
@@ -29,7 +29,7 @@ endfunc
 ```
 
 ## Gvim在Win系统下中文显示和中文菜单乱码解决
-```
+``` vim
 set encoding=utf-8
 set fileencodings=utf-8,chinese,latin-1
 if has("win32")
