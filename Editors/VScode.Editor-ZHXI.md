@@ -35,3 +35,32 @@
 - ESLint              (Dirk Baeumer)
 - HTML CSS Support    (ecmel)
 
+## 3. JSON 配置
+``` json
+{
+    "workbench.iconTheme": "vscode-icons",            // 图标主题
+    "update.mode": "manual",                          // 手动更新
+    "terminal.integrated.inheritEnv": false,
+    "explorer.confirmDelete": false,
+    "kite.showWelcomeNotificationOnStartup": false,   // 不显示 Kite 弹窗
+    "vsicons.dontShowNewVersionMessage": true,        // 图标插件不检查更新
+    "workbench.activityBar.visible": false,           // 侧边栏隐藏
+    "python.pythonPath": "/home/oca/bin/miniconda3/envs/mindspore/bin/python"   // Python 解释器路径
+    "code-runner.executorMap": {                      // Code Runner 相关解释器或调试器路径
+        "html": "google-chrome",
+    }
+
+    // Code-runner 设置
+    "code-runner.defaultLanguage": "python"           // 默认 Code Runner 编程语言为 Python
+    "code-runner.runInTerminal": true,                // 调用终端运行 Code Runner 命令
+    // "code-runner.terminalRoot": "/mnt/",           // 终端的默认起始位置
+    // 设置 wsl 解释器
+    // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",   // when use wsl as terminal
+    // "python.pythonPath": "D:\\Programs\\Miniconda3\\envs\\tf1\\python.exe",  // tf1 环境中的解释器
+    // 设置为 Conda env 中的解释器
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "python.pythonPath": "D:\\ProgramData\\Anaconda3\\envs\\fortrain\\python.exe",
+    "terminal.integrated.shellArgs.windows": ["/K",
+    "D:\\Programs\\miniconda3\\Scripts\\activate.bat D:\\Programs\\miniconda3\\envs\\tf1"]
+}
+```
