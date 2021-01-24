@@ -23,17 +23,20 @@
 
 ### 2.2 语言相关插件
 #### Markdown
-- Markdown All in One (Yu Zhang)
+- `Markdown All in One` (Yu Zhang)
 #### C/C++
-- C/C++               (Microsoft)
+- `C/C++`               (Microsoft)
 #### Python/Perl/R
-- Jupyter             (Microsoft)
-- Python              (Microsoft)
-- Perl                (Gerald Richer)
-- R                   (Yuki Ueda)
+- `Jupyter`             (Microsoft)
+- `Python`              (Microsoft)
+- `Perl`                (Gerald Richer)
+- `R`                   (Yuki Ueda)
 #### Html/CSS/JS
-- ESLint              (Dirk Baeumer)
-- HTML CSS Support    (ecmel)
+- `ESLint`              (Dirk Baeumer)
+- `HTML CSS Support`    (ecmel)
+
+### 2.3 WSL 特有插件
+- `Remote WSL`, `Remote SSH`, 相关插件用于使用 WSL 模拟远程开发，也可用于实际的远程开发工作
 
 ## 3. JSON 配置
 ``` json
