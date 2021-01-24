@@ -50,5 +50,11 @@ F1打开设置搜索框-搜索setting.json （文件-预设-设置-搜索setting
     "python.pythonPath": "D:\\ProgramData\\Anaconda3\\envs\\fortrain\\python.exe",
     "terminal.integrated.shellArgs.windows": ["/K",
     "D:\\Programs\\miniconda3\\Scripts\\activate.bat D:\\Programs\\miniconda3\\envs\\tf1"]
+    
+    
+    // 设置 Html 调试环境 Chrome 浏览器
+    "code-runner.executorMap": {
+        "html": "google-chrome",        // windows 下需要修改路径（注意双反斜杠）
+    }
 
 ```
