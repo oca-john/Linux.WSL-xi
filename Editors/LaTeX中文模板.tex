@@ -1,0 +1,43 @@
+% 文档编码信息，用到的包
+\documentclass[UTF8]{ctexart}		% 使用UTF8编码，文档是中文ctexart
+\CTEXsetup[format={\Large\bfseries}]{section}	% 所有分级标题居左
+\usepackage{fontspec}				% 用fontspec包渲染中文字体
+\usepackage{geometry}				% 使用几何包
+\geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm}	% 定义边距
+
+
+% title信息，标题、作者、日期
+\title{EEG供氧面罩研究综述}
+\author{Xi Zhang}
+\date{2021年1月11日}
+
+
+% 文档正文需要在"\begin{document}"和"\end{document}"之间
+\begin{document}					% 显式声明正文开始
+\maketitle							% 正文中首先要生成title，依据是上面的信息
+
+
+% 摘要是正文的一部分，需要放在{document}内部
+% 摘要需要在"\begin{abstract}"和"\end{abstract}"之间
+\begin{abstract}
+	这里是摘要占位。摘要主要介绍文章信息的总体概览。包括基于什么样的场景（背景），以及场景既有方案存在的问题（专业背景）。考虑该问题可能的解决或改进方案，制定的研究方案或策略。采用该方案或策略得到了符合或不符合预期的结果，结果是如何的。综合比较，讨论该次试验对于背景场景中问题解决得贡献，或对相关方案得优化方面的贡献。
+\end{abstract}
+
+\section{研究背景和相关研究，需在此点题}
+	普遍存在于世界上的各行各业，对于高危行业从业者更是具有极大的危险性。预测有望让这一群体规避危险，但限于早期的计算能力低下，以及以往的研究策略的偏向性，一直未能实现有效的预测方法。
+
+\section{实验设计和主要解决思路，内在逻辑需要捋清，主要方法需要交代清楚}
+\subsection{实验设计}
+	这里是正文第一段落占位。
+
+\subsection{数据获取和预处理}
+
+\subsection{特征工程和模型搭建}
+
+\subsection{模型训练、导出、部署}
+
+\subsection{模型测试、结果评估}
+
+\section{结合领域背景讨论本实验对领域的贡献以及可改进之处}
+
+\end{document}						% 显式声明正文结束
