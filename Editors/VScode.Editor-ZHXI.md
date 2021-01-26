@@ -39,7 +39,8 @@
 - `Remote WSL`, `Remote SSH`, 相关插件用于使用 WSL 模拟远程开发，也可用于实际的远程开发工作
 
 ## 3. JSON 配置
-``` json
+``` js
+// 实际应为json，由于json不支持注释，此处用js语法渲染。
 {
     "workbench.iconTheme": "vscode-icons",            // 图标主题
     "update.mode": "manual",                          // 手动更新
