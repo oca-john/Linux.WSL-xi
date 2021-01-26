@@ -9,3 +9,5 @@
 - libfcitx-4_2_9
 - libQtWebKit4
 - fcitx-qt4
+
+## 1. 手动安装步骤（待补充）
