@@ -43,3 +43,9 @@ source $VIMRUNTIME/menu.vim
 "解决consle输出乱码
 language messages zh_CN.utf-8
 ```
+
+## 删除键失效，不能删除本次以外输入的文本
+``` vim
+" 解决插入模式下delete/backspce键失效问题
+set backspace=2
+```
