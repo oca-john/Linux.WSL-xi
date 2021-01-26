@@ -32,8 +32,8 @@ if has("win32")
 else
  set fileencoding=utf-8
 endif
-"解决菜单乱码
+" 解决菜单乱码
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
-"解决consle输出乱码
+" 解决consle输出乱码
 language messages zh_CN.utf-8
