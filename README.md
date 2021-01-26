@@ -27,7 +27,7 @@ Windows Terminal中配置WSL（openSUSE和Ubuntu）用于默认的开发环境�
 F1打开设置搜索框-搜索setting.json （文件-预设-设置-搜索setting.json-edit.in.setting.json）。  
 
 #### setting-json编辑
-``` json
+``` js
 {
     "workbench.iconTheme": "vscode-icons",            // 图标主题
     "update.mode": "manual",                          // 手动更新
