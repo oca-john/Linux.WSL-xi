@@ -28,6 +28,7 @@ F1打开设置搜索框-搜索setting.json （文件-预设-设置-搜索setting
 
 #### setting-json编辑
 ``` js
+// 实际应为json，由于json不支持注释，此处用js语法渲染。
 {
     "workbench.iconTheme": "vscode-icons",            // 图标主题
     "update.mode": "manual",                          // 手动更新
