@@ -1,7 +1,5 @@
-" # VIM 配置文件积累
-
-" ## 常用格式化显示和高亮
-" ``` vim
+" VIM 配置文件积累
+" 常用格式化显示和高亮
 set nu                          " 显示行号
 syn on                          " 语法高亮
 set hlsearch                    " 高亮搜索结果
@@ -13,10 +11,9 @@ set tabstop=4                   " 制表符设为4格
 set softtabstop=4               " 软制表符设为4格
 set cursorline                  " 突出当前行
 set ruler                       " 状态栏标尺
-" ```
+set backspace=2                 " 删除键失效，不能删除本次以外输入的文本
 
-" ## 绑定运行程序快捷键
-" ``` vim
+" 绑定运行程序快捷键
 filetype plugin on
 " 按 F5 执行当前 Python 代码"
 map <F5> :call PRUN()<CR>
@@ -26,10 +23,8 @@ func! PRUN()
         exec "!python %"
     endif
 endfunc
-" ```
 
-" ## Gvim在Win系统下中文显示和中文菜单乱码解决
-" ``` vim
+" Gvim在Win系统下中文显示和中文菜单乱码解决
 set encoding=utf-8
 set fileencodings=utf-8,chinese,latin-1
 if has("win32")
@@ -42,10 +37,3 @@ source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 "解决consle输出乱码
 language messages zh_CN.utf-8
-" ```
-
-" ## 删除键失效，不能删除本次以外输入的文本
-" ``` vim
-" 解决插入模式下delete/backspce键失效问题
-set backspace=2
-" ```
