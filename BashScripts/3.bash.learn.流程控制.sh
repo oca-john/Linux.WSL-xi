@@ -80,8 +80,33 @@ do
     command
 done
 # 测试示例
+i=10
+while [ $i -ge 1 ]              # 初始为 10，大于 1，True
+do
+    if [ $i == 2 ]
+    then
+        break                   # 等于 2 时，跳过
+    fi
+    echo "$i"                   # 对非 2 数值，打印
+    (( i-- ))                   # 逐次递减
+done
 
 
 # 5. until 语句（条件循环）
-
-
+until [ expression ]
+do
+    command1
+    command2
+    ...
+    commandn
+done
+# 测试示例
+max=3
+a=1
+b=0
+until [[ $a -gt $max || $b -gt $max ]]; # a 大于 3 或 b 大于 3 时，终止
+do
+    echo "a = $a & b = $b."     # 输出
+    ((a++))                     # 逐次加 1
+    ((b++))
+done
