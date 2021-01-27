@@ -26,3 +26,9 @@ str=hello
 str='hello'
 str="hello"             # 不用引号，单引号，双引号均可定义字串（非纯数值）
 # 字串长度
+${#str}                 # 字串本身是整体元素，不用[]遍历元素
+# 拼接字串
+str1='zhang'
+str2='san'
+str3=${str1}" "${str2}  # 使用空格连接即可（单词之间需要空格）
+echo ${str3}
