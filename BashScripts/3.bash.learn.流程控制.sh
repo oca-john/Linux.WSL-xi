@@ -54,9 +54,32 @@ esac
 
 
 # 3. for 语句（数组循环）
+for var in item1 item2 ... itemn    # 对每个待选项执行所有命令
+do
+    command1
+    command2
+    ...
+    commandn
+done
+# 测试示例 1（逐词输出）
+var="start learning form now"   # 初始化变量值
+for var in $var                 # 单个变量提取
+do
+    echo "$var"                 # 循环打印单个变量（逐词）
+done
+# 测试示例 2（数值范围）
+for num in {10..0..2}           # 从 10 到 0，间隔为 2
+do
+    echo $num                   # 循环打印 10-0 之间的偶数（闭区间）
+done
 
 
 # 4. while 语句（条件循环）
+while [ condition ]
+do
+    command
+done
+# 测试示例
 
 
 # 5. until 语句（条件循环）
