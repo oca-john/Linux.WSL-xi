@@ -9,3 +9,20 @@ arr_name=(value1 value2 value3 ... valueN)
 arr_name[0]=value1
 arr_name[1]=value2
 arr_name[12]=value13    # 不连续初始化（不会填充跳过的索引）
+
+
+# 访问数组元素
+${arr_name[idx]}        # 注意 {} 的包裹，容易忽略，引起
+# 遍历数组
+${arr_name[*]}          # * 通配符选择所有元素
+${arr_name[@]}          # @ 选择数组
+# 数组长度，在遍历数组的基础上计算元素数
+${#arr_name[*]}         # 遍历，并计数
+${#arr_name[@]}
+
+
+# 定义字串
+str=hello
+str='hello'
+str="hello"             # 不用引号，单引号，双引号均可定义字串（非纯数值）
+# 字串长度
