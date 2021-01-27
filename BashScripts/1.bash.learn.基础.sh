@@ -2,10 +2,10 @@
 
 
 # shell 脚本本质上就是 sh 交互式命令的集合，完全按照 sh 中的操作依次进行
-# 使用 #! 行告诉系统解释器的位置在 /usr/bin/sh 或者 /bin/bash
 # shell 的运行有两种方式：
 # chmod +x ./shellscript.sh & ./shellscript.sh # 先给执行权限再运行
 # sh ./shellscript.sh # 直接用解释器运行
+# 简短的 shell 脚本可以写在一行，每句命令用";"隔开即可
 
 
 # 1. 定义变量时，变量前不加 $ 符号，调用时才加；变量名不能有空格，= 前后不能有空格。
