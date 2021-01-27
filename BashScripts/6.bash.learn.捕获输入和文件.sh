@@ -32,7 +32,7 @@ echo "The entered names are : ${names[0]}, ${names[1]}."
 
 
 # 读取文件
-# 方法一：cat file
+# 方法一：cat file（注意：反引号包裹）
 value=`cat file`                # 借用 cat 工具读取文件内容，并打印
 echo $value
 
