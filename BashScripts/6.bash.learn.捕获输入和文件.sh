@@ -1,6 +1,7 @@
 #!/usr/bin/sh
 
 
+# 捕获用户输入
 # read，捕获用户输入(折行输入)
 echo "Enter your name:"
 read user_name                  # 捕获用户输入，赋给变量
@@ -28,3 +29,13 @@ echo "Enter names : "
 read -a names                   # 数组 names 中保存了所需信息
 echo "The entered names are : ${names[0]}, ${names[1]}."
 # 数组中子项的提取，同样使用[]，注意变量边界在外侧
+
+
+# 读取文件
+# 方法一：cat file
+value=`cat file`                # 借用 cat 工具读取文件内容，并打印
+echo $value
+
+# 方法二：$(<file)
+value=$(<file)                  # 用 < 重定向给变量 $()，并打印
+echo $value
