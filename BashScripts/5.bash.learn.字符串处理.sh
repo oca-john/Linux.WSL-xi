@@ -33,10 +33,11 @@ str2='san'
 str3=${str1}" "${str2}  # 使用空格连接即可（单词之间需要空格）
 echo ${str3}
 
+
 # 提取子字串
 str="test picking string"
-substr1=${str:3}            # 从 index=3 的元素开始提取其后所有元素
-substr2=${str:2:6}          # 从 index=2 的元素开始提取后面 6 个元素
+substr1=${str:3}            # 从 index=3 的元素起，提取其后所有元素
+substr2=${str:2:6}          # 从 index=2 的元素起，提取其后 6 个元素
 # 删除子字串
 str="abcabcdefabcabc"
 echo "${str#a*b}"           # 左(#)起，删除匹配 a*b 的最短子字串(模式左侧 = 起点元素 a)
