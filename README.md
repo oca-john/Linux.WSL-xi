@@ -10,8 +10,8 @@
 键入`systemctl set-default multi-user.target`将启动方式修改为文本界面启动；  
 
 ## 2. Windows环境下的类Linux环境
-### Windows Terminal中配置WSL（openSUSE和Ubuntu）
-Windows Terminal中配置WSL（openSUSE和Ubuntu）用于默认的开发环境，与可视化相关的则用Conda进行配置，可调用Windows原生库进行绘图。
+### Windows Terminal中配置WSL（openSUSE）
+Windows Terminal中配置WSL（openSUSE）用于默认的开发环境，与可视化相关的则用Conda进行配置，可调用Windows原生库进行绘图。
 
 ## 3. vscode.code-runner.wsl-linux
 ### 软件环境
