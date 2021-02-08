@@ -60,7 +60,7 @@ printf "fonts are ok!\n"
 cd ../
 
 # multimedia codecs
-sudo zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
+sudo zypper ar -cfp 90 https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_15.2/ packman
 sudo zypper in -y --allow-vendor-change ffmpeg lame gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-plugins-ugly-orig-addon gstreamer-plugins-libav libavdevice56 libavdevice58 libdvdcss2 vlc-codecs
 sudo zypper up --from packman --allow-vendor-change
 printf "multimedia codecs are installed\n"
