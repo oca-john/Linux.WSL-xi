@@ -10,9 +10,11 @@ set hlsearch                    " 高亮搜索结果
 set matchtime=25                " 括号匹配高亮时间 (毫秒)
 set mouse=a                     " 启用鼠标
 set nocompatible                " 关闭兼容模式
+set noeb                        " 去掉输入错误的提示声音
 set nu                          " 显示行号
 syn on                          " 语法高亮
 set ruler                       " 状态栏标尺
+set showmatch                   " 高亮显示匹配的括号
 set sm                          " 短暂高亮显示括号匹配
 set smartindent                 " 智能自动缩进
 set softtabstop=4               " 软制表符设为 4 格
