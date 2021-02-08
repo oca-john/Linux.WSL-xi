@@ -1,17 +1,19 @@
 " VIM 配置文件积累
 " 常用格式化显示和高亮
+colorscheme slate               " 设置主题配色为 slate (dark)
+set autoindent                  " 自动缩进
+set backspace=2                 " 删除键失效，不能删除本次以外输入的文本
+set cindent                     " 使用 C 语法缩进
+set cursorline                  " 突出当前行
+set hlsearch                    " 高亮搜索结果
+set matchtime=25                " 括号匹配高亮时间（毫秒）
 set nu                          " 显示行号
 syn on                          " 语法高亮
-set hlsearch                    " 高亮搜索结果
-set sm                          " 短暂高亮显示括号匹配
-set matchtime=25                " 括号匹配高亮时间（毫秒）
-set autoindent                  " 自动缩进
-set cindent                     " 使用 C 语法缩进
-set tabstop=4                   " 制表符设为 4 格
-set softtabstop=4               " 软制表符设为 4 格
-set cursorline                  " 突出当前行
 set ruler                       " 状态栏标尺
-set backspace=2                 " 删除键失效，不能删除本次以外输入的文本
+set sm                          " 短暂高亮显示括号匹配
+set softtabstop=4               " 软制表符设为 4 格
+set tabstop=4                   " 制表符设为 4 格
+set vb t_vb=                    " 关闭提示音
 
 
 " gvim 设置默认工作路径
