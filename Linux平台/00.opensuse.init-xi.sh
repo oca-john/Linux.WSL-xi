@@ -20,8 +20,8 @@ sudo ln -s python3.* /usr/bin/python
 sudo rm pip
 sudo ln -s pip3 /usr/bin/pip
 cd
-# use `-i https://pypi.tuna.tsinghua.edu.cn/simple` to speed up the installation
-sudo pip install torch==1.5.1+cpu torchvision==0.6.1+cpu -i https://pypi.tuna.tsinghua.edu.cn/simple
+# use `-i https://mirrors.ustc.edu.cn/pypi/web/simple` or `-i https://pypi.tuna.tsinghua.edu.cn/simple` to speed up the installation
+sudo pip install torch==1.5.1+cpu torchvision==0.6.1+cpu -i https://mirrors.ustc.edu.cn/pypi/web/simple
 printf "python3, pip3, pytorch are installed well\n"
 
 # install from rpms
