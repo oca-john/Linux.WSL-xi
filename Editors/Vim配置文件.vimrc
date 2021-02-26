@@ -5,7 +5,7 @@ set autoindent                  " 自动缩进
 set backspace=2                 " 启用退格键 (删除键不可用问题)
 set cindent                     " 使用 C 语法缩进
 set cursorline                  " 突出当前行
-set guifont=Consolas:h12        " 字体和字号
+set guifont=Consolas:h12        " 字体和字号 (字号可能引起显示混乱)
 set hlsearch                    " 高亮搜索结果
 set matchtime=25                " 括号匹配高亮时间 (毫秒)
 set mouse=a                     " 启用鼠标
