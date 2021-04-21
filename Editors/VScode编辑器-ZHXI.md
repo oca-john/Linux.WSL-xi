@@ -1,4 +1,4 @@
-# VScode Editor 开发环境 - ZHXI
+# VScode编辑器-ZHXI
 
 ## 1. VScode 基础
 ### 1.1 平台差异
