@@ -18,6 +18,6 @@
 - 进入MariaDB/MySQL，`mariadb`；
 - 使用临时数据库，`use mysql`；
 - 尝试用UPDATE命令更新密码，`UPDATE user SET password=password('root') WHERE user='root'`，失败(会引起E1348错误)；
-- 需要使用ALTER命令更新密码，`ALTER USER'root'@'localhost' IDENTIFIED BY 'root'`，成功；
+- 需要使用ALTER命令更新密码，`ALTER USER'root'@'localhost' IDENTIFIED BY 'root'`，成功；(若失败，先flush之后再重新ALTER)
 - 刷新权限，`flush privileges`；
 - 关键操作用root用户；
