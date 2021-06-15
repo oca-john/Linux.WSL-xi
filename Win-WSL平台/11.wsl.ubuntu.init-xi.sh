@@ -1,5 +1,6 @@
 #!/usr/bin/sh
 # wsl.ubuntu.init-xi
+# 直接引用自openSUSE，使用时灵活更换Ubuntu相关的命令行习惯
 
 # openSUSE命令中若直接带-y参数，只能跟在zypper的具体命令之后，不能放在最后
 # 如，`sudo zypper in -y emacs-nox`
@@ -7,7 +8,7 @@
 # 需写作，`sudo apt/dnf install -y emacs-nox`或`sudo apt/dnf install emacs-nox -y`
 
 printf "softwares are being installed by repos\n"
-sudo zypper in -y cmake gcc gcc-c++ git htop python3-matplotlib python3-numpy python3-pylint python3-pyside2 python3-seaborn python3-scipy
+sudo zypper in -y cmake gcc gcc-c++ git htop python3-matplotlib python3-numpy python3-ipython python3-jupyterlab python3-pyside2 python3-seaborn python3-scipy
 printf "repos' softwares are installed\n"
 # java 1.8 暂不支持apt直接安装
 
