@@ -20,7 +20,7 @@ sudo ln -s python3.6 /usr/bin/python
 sudo rm pip
 sudo ln -s pip3 /usr/bin/pip
 cd
-# use `-i https://mirrors.ustc.edu.cn/pypi/web/simple` or `-i https://pypi.tuna.tsinghua.edu.cn/simple` to speed up the installation
+# use `-i https://mirrors.ustc.edu.cn/pypi/web/simple`(This Repo is Faster!) or `-i https://pypi.tuna.tsinghua.edu.cn/simple` to speed up the installation
 sudo pip install onnx tensorflow torch -i https://mirrors.ustc.edu.cn/pypi/web/simple
 printf "python3, pip3, pytorch are installed well\n"
 
