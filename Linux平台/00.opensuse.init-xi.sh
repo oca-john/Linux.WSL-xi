@@ -10,18 +10,18 @@
 
 # install from repos
 printf "softwares are being installed by repos\n"
-sudo zypper in -y amarok audacity cmake chromium darktable dia filezilla gcc gcc-c++ gimp git goldendict htop imagej imagemagick imagewriter inkscape java-1_8_0-openjdk-devel kcolorchooser kdenlive krita libqt5-creator lyx marble patterns-kde-devel_qt5 plasma5-desktop-emojier python3-matplotlib python3-numpy python3-pylint python3-pyside2 python3-seaborn python3-scipy rawtherapee scribus smplayer teams teamviewer-suse texstudio virtualbox vlc
+sudo zypper in -y amarok audacity cmake chromium darktable dia filezilla gcc gcc-c++ gimp git goldendict htop imagej imagemagick imagewriter inkscape java-1_8_0-openjdk-devel kcolorchooser kdenlive krita libqt5-creator lyx marble patterns-kde-devel_qt5 plasma5-desktop-emojier python3-matplotlib python3-numpy python3-pylint python3-ipython python3-jupyterlab python3-pyside2 python3-seaborn python3-scipy rawtherapee scribus smplayer teams teamviewer-suse texstudio virtualbox vlc
 printf "repos' softwares are installed\n"
 
 # configure the python3 and pip3
 cd /usr/bin/
 sudo rm python
-sudo ln -s python3.* /usr/bin/python
+sudo ln -s python3.6 /usr/bin/python
 sudo rm pip
 sudo ln -s pip3 /usr/bin/pip
 cd
 # use `-i https://mirrors.ustc.edu.cn/pypi/web/simple` or `-i https://pypi.tuna.tsinghua.edu.cn/simple` to speed up the installation
-sudo pip install torch==1.5.1+cpu torchvision==0.6.1+cpu -i https://mirrors.ustc.edu.cn/pypi/web/simple
+sudo pip install onnx tensorflow torch -i https://mirrors.ustc.edu.cn/pypi/web/simple
 printf "python3, pip3, pytorch are installed well\n"
 
 # install from rpms
