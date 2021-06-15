@@ -7,19 +7,19 @@
 # 需写作，`sudo apt/dnf install -y emacs-nox`或`sudo apt/dnf install emacs-nox -y`
 
 printf "softwares are being installed by repos\n"
-sudo zypper in -y cmake gcc gcc-c++ git htop python3-matplotlib python3-numpy python3-pylint python3-pyside2 python3-seaborn python3-scipy java-1_8_0-openjdk-devel
+sudo zypper in -y cmake gcc gcc-c++ git python3-matplotlib python3-numpy python3-ipython python3-jupyterlab python3-pyside2 python3-seaborn python3-scipy java-1_8_0-openjdk-devel
 printf "repos' softwares are installed\n"
 
 # configure the python3 and pip3
 cd /usr/bin/
 sudo rm python
-sudo ln -s python3.* /usr/bin/python
+sudo ln -s python3.6 /usr/bin/python
 sudo rm pip
 sudo ln -s pip3 /usr/bin/pip
 cd
 sudo pip install pylint
-# use `-i https://mirrors.ustc.edu.cn/pypi/web/simple` or `-i https://pypi.tuna.tsinghua.edu.cn/simple` to speed up the installation
-sudo pip install torch==1.5.1+cpu torchvision==0.6.1+cpu -i https://mirrors.ustc.edu.cn/pypi/web/simple
+# use `-i https://pypi.tuna.tsinghua.edu.cn/simple` to speed up the installation
+sudo pip install onnx tensorflow torch -i https://pypi.tuna.tsinghua.edu.cn/simple
 printf "python3, pip3, pytorch are installed well\n"
 
 printf "everything's ok!\n"
