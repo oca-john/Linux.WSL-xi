@@ -22,3 +22,16 @@ else
 	echo "Sogou & fcitx are not running, safe to go.";
 fi
 
+# Installation, File copy
+# /etc files
+sudo cp -r etc/X11/Xsession.d/72sogoupinyin /etc/X11/xdm/
+sudo cp -r etc/xdg/autostart/* /etc/xdg/autostart/
+# /opt files
+sudo cp -r opt/* /opt/
+# /usr files
+chmod +x usr/lib/x86_64-linux-gnu/fcitx/*.so
+sudo cp -r usr/lib/x86_64-linux-gnu/fcitx/*.so /usr/lib64/fcitx/
+sudo cp -r usr/share/applications/*.desktop /usr/share/applications/
+sudo cp -r usr/share/doc/sogoupinyin /usr/share/doc/
+sudo cp -r 
+sudo cp -r 
