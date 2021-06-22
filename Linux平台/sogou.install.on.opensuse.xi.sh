@@ -3,7 +3,8 @@
 # This script is used to install sogou-2.4 into openSUSE Leap 15.3 x86_64
 # Script creat time: 2021.06.22, by Oca John <zhangxiyh@yahoo.com>
 
-# Download pkg of sogoupinyin(now 2.4) by yourself, and cd to it's dir.
+# Download pkg of sogoupinyin(now 2.4)
+wget https://ime.sogoucdn.com/dl/index/1612260778/sogoupinyin_2.4.0.3469_amd64.deb
 # Uncompress the deb pkg, and the data file.
 ar -x sogoupinyin_2.4.0.3469_amd64.deb
 tar -xf data.tar.xz
@@ -38,6 +39,10 @@ sudo cp -ru usr/share/icons/hicolor /usr/share/icons/
 /usr/bin/update-desktop-database -q /usr/share/applications 
 /usr/bin/gtk-update-icon-cache -fq /usr/share/icons/hicolor
 /sbin/ldconfig
+
+# File clean
+sudo rm -rf etc/ opt/ usr/ control.tar.gz data.tar.xz debian-binary 
+sudo rm sogoupinyin_2.4.0.3469_amd64.deb
 
 # Success
 echo "Sogou Pinyin Linux is now installed."
