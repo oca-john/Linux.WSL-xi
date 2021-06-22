@@ -3,10 +3,8 @@
 # This script is used to install sogou-2.4 into openSUSE Leap 15.3 x86_64
 # Script creat time: 2021.06.22, by Oca John <zhangxiyh@yahoo.com>
 
-# Download pkg of the latest release of sogoupinyin(now 2.4)
-wget https://ime.sogouimecdn.com/202106221047/f498062e8b966a3a1875d564dadf2f43/dl/index/1612260778/sogoupinyin_2.4.0.3469_amd64.deb ~/Downloads/
-cd Downloads
-# uncompress the deb pkg, and the data file.
+# Download pkg of sogoupinyin(now 2.4) by yourself, and cd to it's dir.
+# Uncompress the deb pkg, and the data file.
 ar -x sogoupinyin_2.4.0.3469_amd64.deb
 tar -xf data.tar.xz
 
@@ -23,12 +21,9 @@ else
 fi
 
 # Installation, File copy
-# /etc files
 sudo cp -r etc/X11/Xsession.d/72sogoupinyin /etc/X11/xdm/
 sudo cp -r etc/xdg/autostart/* /etc/xdg/autostart/
-# /opt files
 sudo cp -r opt/* /opt/
-# /usr files
 chmod +x usr/lib/x86_64-linux-gnu/fcitx/*.so
 sudo cp -r usr/lib/x86_64-linux-gnu/fcitx/*.so /usr/lib64/fcitx/
 sudo cp -r usr/share/applications/*.desktop /usr/share/applications/
