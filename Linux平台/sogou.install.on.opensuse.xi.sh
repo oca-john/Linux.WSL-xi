@@ -33,5 +33,18 @@ chmod +x usr/lib/x86_64-linux-gnu/fcitx/*.so
 sudo cp -r usr/lib/x86_64-linux-gnu/fcitx/*.so /usr/lib64/fcitx/
 sudo cp -r usr/share/applications/*.desktop /usr/share/applications/
 sudo cp -r usr/share/doc/sogoupinyin /usr/share/doc/
-sudo cp -r 
-sudo cp -r 
+sudo cp -r usr/share/fcitx/addon/*.conf /usr/share/fcitx/addon/
+sudo cp -r usr/share/fcitx/imicon/*.png /usr/share/fcitx/imicon/
+sudo cp -r usr/share/fcitx/inputmethod/*.conf /usr/share/fcitx/inputmethod/
+sudo cp -ru usr/share/icons/hicolor /usr/share/icons/
+
+# Afterwork, by Marguerite Su <marguerite@opensuse.org>
+/usr/bin/update-mime-database /usr/share/mime/packages &> /dev/null
+/usr/bin/update-desktop-database -q /usr/share/applications 
+/usr/bin/gtk-update-icon-cache -fq /usr/share/icons/hicolor
+/sbin/ldconfig
+
+# Success
+echo "Sogou Pinyin Linux is now installed."
+echo "Please start 1) fcitx 2) sogou-qimpanel again."
+exit 0
