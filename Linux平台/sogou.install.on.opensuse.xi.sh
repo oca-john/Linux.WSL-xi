@@ -41,7 +41,7 @@ echo "3. Installation files are all dealed."
 /usr/bin/update-desktop-database -q /usr/share/applications 
 /usr/bin/gtk-update-icon-cache -fq /usr/share/icons/hicolor
 /sbin/ldconfig
-echo "4. After work is done."
+echo "4. Afterwork all done."
 
 # File clean
 sudo rm -rf etc/ opt/ usr/ control.tar.gz data.tar.xz debian-binary 
