@@ -1,8 +1,8 @@
 #!/usr/bin/sh
 # This script is used to install sogou-2.4 into openSUSE Leap 15.3 x86_64
 # This script works well under KDE and Xfce. But you need to install fcitx by yourself, `sudo zypper in fcitx`.
-# If you are working under Gnome3, you also need install `TopIcons Plus` in the software center.
-# Script creat time: 2021.06.22, and update at 2021.06.26, by Oca John <zhangxiyh@yahoo.com>
+# If you are working on Gnome3, you also need to install `TopIcons Plus` in the software center.
+# Script creat time: 2021.06.22, and updated at 2021.06.26, by Oca John <zhangxiyh@yahoo.com>
 
 # Download pkg of sogoupinyin(now 2.4)
 wget https://ime.sogoucdn.com/dl/index/1612260778/sogoupinyin_2.4.0.3469_amd64.deb
