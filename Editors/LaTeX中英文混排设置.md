@@ -17,9 +17,9 @@
 > > 
 > > Prob-arch: Texlive + Kile/TexStudio, 编译通过，并生成PDF。
 > > 
-> > ----- Prob-win: Texlive + Kile/TexStudio, 改为英文文件名，才能编译。
+> > Prob-win: Texlive + Kile/TexStudio, 编译通过，并生成PDF。
 > > 
-> > xxxxx Expc-deepin: MikTex + Kile/TexWorks, 失败。
+> > ----- Expc-deepin: MikTex + Kile/TexWorks, 失败。
 > > 
 > > Expc-win: MikTex + Kile/TexWorks, 编译通过，并生成PDF。
 
