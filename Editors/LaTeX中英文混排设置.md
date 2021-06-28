@@ -5,6 +5,9 @@
 > Linux下可通过`texlive-langchinese`包安装`XeLaTeX`。
 >
 > > 注意：编译器仅限`XeLaTeX`；
+> > `LaTeX/TeX`文件保存时尽量使用英文，`TexStudio`或`Kile`调用
+> > `xeLaTeX/xeTeX`命令`xelatex -synctex=1 -interaction=nonstopmode LaTeX中文文件名.tex`，
+> > 由于编译器不支持中文字符编码，不能识别文件名中的中文，导致报错。
 
 ## 基于`xeCJK`宏包的中文兼容性设置
 
