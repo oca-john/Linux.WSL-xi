@@ -6,14 +6,21 @@
 >
 > > 注意：编译器仅限`XeLaTeX`；
 > > `LaTeX/TeX`文件保存时尽量使用英文，`TexStudio`或`Kile`调用
+> > 
 > > `xeLaTeX/xeTeX`命令`xelatex -synctex=1 -interaction=nonstopmode LaTeX中文文件名.tex`，
+> > 
 > > 由于编译器不支持中文字符编码，不能识别文件名中的中文，导致报错。
 > > 
 > > Asus-suse: Texlive + Kile/TexStudio, 编译通过，并生成PDF。
+> > 
 > > Asus-win: Texlive + Kile/TexStudio, 编译通过，并生成PDF。
+> > 
 > > Prob-arch: Texlive + Kile/TexStudio, 编译通过，并生成PDF。
+> > 
 > > ----- Prob-win: Texlive + Kile/TexStudio, 改为英文文件名，才能编译。
+> > 
 > > xxxxx Expc-deepin: MikTex + Kile/TexWorks, 失败。
+> > 
 > > Expc-win: MikTex + Kile/TexWorks, 编译通过，并生成PDF。
 
 ## 基于`xeCJK`宏包的中文兼容性设置
