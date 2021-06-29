@@ -31,5 +31,8 @@ LaTex本质上是以标记文本的形式来写文章(Md就可以理解为简化
 参考“LaTeX新人教程”。
 
 > 注意：与编程环境一样，尽量使用 space 而非 tab 实现缩进。
+> 
 > Texstudio中，选项 - 配置texstudio - 编辑器 - 缩进模式 - 用space替代tab
+> 
 > Kile中，设置 - 编辑器 - 编辑 - 缩进- 使用“spaces”缩进
+
