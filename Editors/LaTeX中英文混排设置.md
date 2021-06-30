@@ -15,11 +15,11 @@
 > > 
 > > Asus-win: Texlive + Kile/TexStudio, 编译通过，并生成PDF。
 > > 
-> > Prob-arch: Texlive + Kile/TexStudio, 编译通过，并生成PDF。
+> > Prob-arch: Texlive + Kile/TexStudio, 编译通过，并生成PDF[Arch未频繁更新，后续谨慎部署Arch Linux]。
 > > 
 > > Prob-win: Texlive + Kile/TexStudio, 编译通过，并生成PDF。
 > > 
-> > ----- Expc-deepin: MikTex + Kile/TexWorks, 失败。
+> > --- Expc-deepin: Texlive-Core + Kile, 编译通过，有报错，Deepin自带Okular不可卸载，不影响Kile使用，但影响系统依赖处理[后续不考虑不熟Deepin]。
 > > 
 > > Expc-win: MikTex + Kile/TexWorks, 编译通过，并生成PDF。
 
