@@ -6,7 +6,7 @@
 > > `xeLaTeX/xeTeX`的命令`xelatex -synctex=1 -interaction=nonstopmode LaTeX中文文件名.tex`时，  
 > > 由于编译器不支持中文字符编码，可能无法识别文件名中的中文，而导致报错（仅系统默认不支持UTF8时）。  
 > > 注意2：对默认支持的系统不要修改编码方式，此操作可能会导致其他文件或程序的乱码。  
-> > 注意3：编辑器关闭启动画面(Kl)，关闭实时预览(Kl)，使用Xelatex编译器(Ts/Kl)，Build方式改为compile方式(Kl)，修改缩进为空格(Ts/Kl)。  
+> > 注意3：编辑器关闭启动画面(Kl)，关闭实时预览(Kl)，使用Xelatex编译器(Ts/Kl)，Build方式改为compile方式(Kl)，缩进方式改为空格(Ts/Kl)。  
 > 
 > Asus-suse: Texlive + Kile/TexStudio, 编译通过，并生成PDF。  
 > Asus-win: Texlive + Kile/TexStudio, 编译通过，并生成PDF。  
