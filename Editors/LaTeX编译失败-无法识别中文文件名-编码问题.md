@@ -33,3 +33,6 @@ ControlPanel - Region - Administrative - ChangeSystemLocale - UseUnicodeUTF8forW
 控制面板 - 区域设置 - 管理 - 修改系统策略 - 使用UnicodeUTF8来支持其他语言
 
 修改后重启计算机即可。
+
+3. 注意：目前仅Prob平台无法识别中文文件名，采用修改系统编码的方式来修正。但如此会导致部分系统应用和场景的中文乱码，因此不推荐所有平台开启（Asus, Expc平台均未开启）。
+
