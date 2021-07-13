@@ -1,4 +1,5 @@
 // LaTeX Workshop 插件需要先安装
+// 实际应为.json格式的code配置文件，但github渲染错误，修改为.js格式以便阅读
 //
 //
 // latex-workshop.latex.tools LaTeX工具，用于配置环境内的所有工具参数；
