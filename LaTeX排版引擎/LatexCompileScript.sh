@@ -1,7 +1,18 @@
 #!/usr/bin/sh
 # 本文件将保存为名为`lcs(Latex_Compile_Script)`的命令行程序
 # chmod a+x lcs; sudo mv lcs /usr/bin/
-#
+
+# 0. 帮助文档
+if [[ $1 = "--help" ]] || [[ $1 = "-h" ]]
+then
+    echo "This is an bash program wrote by Oca John."
+    echo "You can use it to compile a tex file, like this:"
+    echo ""
+    echo "      lcs filename.tex"
+    echo ""
+    exit 0
+fi
+
 # 1. 接收主要参数（文件名，含扩展名）
 file=$1
 
@@ -24,4 +35,4 @@ echo "Source file had been compiled!\n"
 # 4. 清除产生的中间文件
 rm *.aux *.bbl *.blg *.log
 echo "All mid-files had been cleaned!\n"
-echo "I'm oca! Thanks for your choice!\n"
+echo "I'm Oca! Thanks for your choice!\n"
