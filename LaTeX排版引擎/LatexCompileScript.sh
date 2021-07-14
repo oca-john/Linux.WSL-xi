@@ -1,6 +1,6 @@
 #!/usr/bin/sh
-# 本文件将保存为名为`lx`的命令行程序
-# chmod a+x lx; sudo mv lx /usr/bin/
+# 本文件将保存为名为`lcs(Latex_Compile_Script)`的命令行程序
+# chmod a+x lcs; sudo mv lcs /usr/bin/
 #
 # 1. 接收主要参数（文件名，含扩展名）
 file=$1
