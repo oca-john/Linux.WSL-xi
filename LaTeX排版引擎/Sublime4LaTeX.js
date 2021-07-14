@@ -3,6 +3,13 @@
 // 默认包含 bibliography 设置，不需要单独配置。
 // 
 // 
+// 1. 安装 LaTeXTools 扩展
+// 搜索并安装 LaTeXTools扩展
+// 
+// 2. 初始化 LaTeXTools 配置文件
+// 搜索`latexsetting`，重置用户配置文件（初始化）
+// 
+// 3. 修改配置文件
 // Platform settings: adapt as needed for your machine
 "python": "python",			// line 234
 // Build engine settings
