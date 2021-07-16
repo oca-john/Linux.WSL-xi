@@ -1,6 +1,7 @@
 # openSUSE 下 conda 虚拟环境部署
 
 > Python 3.7 以上，支持使用 pip 直接安装（建议修改 USTC 源）
+> 当前已更新为 Mindspore 1.2.1
 
 - 以 MindSpore 1.0.1 部署为例
 
