@@ -1,4 +1,5 @@
 # Conda 虚拟环境部署 MindSpore
+> Python 3.7 以上，支持使用 pip 直接安装（建议修改 USTC 源）
 - 以 MindSpore 1.0.1 部署为例
 
 ## 1. MiniConda 部署
