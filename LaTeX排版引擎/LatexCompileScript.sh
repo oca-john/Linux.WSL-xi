@@ -5,7 +5,7 @@
 # 0. 帮助文档
 if [[ $1 = "--help" ]] || [[ $1 = "-h" ]]
 then
-    echo "This is an bash program wrote by Oca John."
+    echo "This is an bash program developed by Oca John."
     echo "You can use it to compile a tex file, like this:"
     echo ""
     echo "      lcs filename.tex"
