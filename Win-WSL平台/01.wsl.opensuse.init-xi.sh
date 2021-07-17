@@ -1,5 +1,7 @@
 #!/usr/bin/sh
 # wsl.opensuse.init-xi
+# WSL 已支持与 Win 环境中的 exe 应用相互调用
+# 不需要在 WSL 内部安装与 Win 中重复的应用
 
 # openSUSE命令中若直接带-y参数，只能跟在zypper的具体命令之后，不能放在最后
 # 如，`sudo zypper in -y emacs-nox`
