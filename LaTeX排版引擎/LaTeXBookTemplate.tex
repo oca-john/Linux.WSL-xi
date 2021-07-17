@@ -1,0 +1,29 @@
+\documentclass{elegantbook}   % 定制的 ElegantBook 模板
+
+% title info
+\title{Title}
+\subtitle{Subtitle is here}
+
+% bio info                    % 书籍信息
+\author{Your Name}
+\institute{XXX University}
+\date{\today}
+
+% extra info
+\version{1.00}
+\extrainfo{Victory won\rq t come to us unless we go to it. --- M. Moore}
+\logo{logo.png}
+\cover{cover.jpg}
+
+\begin{document}              % 书籍开始，先生成全局信息
+\maketitle
+\tableofcontents
+\mainmatter
+\hypersetup{pageanchor=true}
+
+% add preface chapter here if needed
+\chapter{Example Chapter Title} % 章节开始
+The content of chapter one.
+
+\bibliography{reference}      % 参考资料
+\end{document}
