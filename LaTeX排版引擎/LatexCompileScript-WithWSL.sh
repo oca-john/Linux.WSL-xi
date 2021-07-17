@@ -1,6 +1,9 @@
 #!/usr/bin/sh
 # 本文件将保存为名为`lcs(Latex_Compile_Script)`的命令行程序
 # chmod a+x lcs; sudo mv lcs /usr/bin/
+# Windows平台不能直接运行sh脚本，借助WSL与Win.exe应用的交互调用能力实现
+# sh脚本在WSL内运行，LaTeX使用Win环境中已经安装的，而不必在WSL中重新配置
+# 即，WSL负责sh脚本解析与执行，用sh调用Win中的xelatex.exe等编译器，其他与Linux环境一致
 
 # 0. 帮助文档
 if [[ $1 = "--help" ]] || [[ $1 = "-h" ]]
