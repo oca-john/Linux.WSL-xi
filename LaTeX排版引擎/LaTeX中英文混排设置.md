@@ -1,6 +1,6 @@
 # `LaTeX`中英文混排设置
 
-> 由于`CTeX`包非常老旧，倾向于采用`XeCJK`实现中英文混排。  
+> 由于`CTeX`包非常老旧，倾向于采用`XeCJK`实现中英文混排，或使用`ctex`宏包（不是CTEX套件）。  
 > Linux下可通过`texlive-langchinese`包安装`XeCJK`。  
 > > 注意1：编译器仅限`XeLaTeX`，`LaTeX/TeX`文件保存时尽量使用英文，因为在`TexStudio`或`Kile`调用  
 > > `xeLaTeX/xeTeX`的命令`xelatex -synctex=1 -interaction=nonstopmode LaTeX中文文件名.tex`时，  
@@ -36,3 +36,14 @@
 \end{document}
 ```
 
+## 基于`ctex`宏包（底层封装了CJK/xeCJK/luatexja等中文宏包）的中文兼容性设置
+
+``` latex
+\documentclass{ctexart}
+\begin{document}
+在\LaTeX{}中排版中文。
+汉字和English单词混排,通常不需要在中英文之间添加额外的空格。
+当然,为了代码的可读性,加上汉字和 English 之间的空格也无妨。
+汉字换行时不会引入多余的空格。
+\end{document}
+```
