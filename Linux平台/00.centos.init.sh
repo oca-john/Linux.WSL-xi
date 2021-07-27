@@ -1,11 +1,12 @@
 #!/usr/bin/sh
 
-# CentOS新版本与旧版又较大区别，在更新上具有了进步性意义
-# 但同时，Stream的存在目前是比较尴尬的（事实上是滚动的CentOS_8，而非滚动的CentOS）
+# CentOS 系列已`完全弃用`
+# CentOS 新版本与旧版又较大区别，在更新上具有了进步性意义
+# 但同时，Stream 的存在目前是比较尴尬的（事实上是滚动的 CentOS_8，而非滚动的 CentOS，大版本更新依然需要重新安装）
 
 # 检查网络
-# 实体机时，主要是检查驱动和网络开关，若gnome插件不工作，可通过nm-connection-editor编辑网络练级；
-# 虚拟机时，主要是检查网络开关和VM插件有没有安装；
+# 实体机时，主要是检查驱动和网络开关，若 gnome 插件不工作，可通过 nm-connection-editor 编辑网络练级；
+# 虚拟机时，主要是检查网络开关和 VM 插件有没有安装；
 
 # 开启EPEL-方法1
 sudo dnf install epel-release-8-8.el8.noarch    # 通过dnf安装epel配置软件包，自动开启epel源
