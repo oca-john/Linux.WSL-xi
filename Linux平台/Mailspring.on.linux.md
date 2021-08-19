@@ -1,7 +1,7 @@
 # MailSpring on Linux
-> 使用 Mailspring 作为全平台邮件管理客户端
-> Mailspring 支持主流邮箱账号、本地管理邮箱密码、界面简洁合理、基于C编写同步速度快
-> 下载地址（Github）：https://github.com/Foundry376/Mailspring/releases
+> 使用 Mailspring 作为全平台邮件管理客户端  
+> Mailspring 支持主流邮箱账号、本地管理邮箱密码、界面简洁合理、基于C编写同步速度快  
+> 下载地址（Github）：https://github.com/Foundry376/Mailspring/releases  
 
 ## 在 Linux 下安装
 1. 从 Github 下载安装包（.rpm, .deb）并用 `zypper` 或 `apt` 安装，ArchLinux 使用 `pacman` 安装
@@ -19,5 +19,5 @@
 4. 进入软件界面后，调整视图，配置开机自启选项、配置界面配色
 
 ## 注意 `钥匙环`
-> openSUSE/ArchLinux 上需要安装 `gnome-keyring` 钥匙环用于本地密码管理（可以配置空密码）
-> Win 平台不需要钥匙环应用
+> openSUSE/ArchLinux 上需要安装 `gnome-keyring` 钥匙环用于本地密码管理（可以配置空密码）  
+> Win 平台不需要钥匙环应用  
