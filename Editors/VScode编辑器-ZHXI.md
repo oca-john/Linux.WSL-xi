@@ -1,6 +1,6 @@
 # VScode编辑器-ZHXI
-> `Ctrl + /`, 可快速单行注释
-> `Ctrl + Shift + a`, 可快速多行注释 / 块注释
+> `Ctrl + /`, 可快速单行注释  
+> `Ctrl + Shift + a`, 可快速多行注释 / 块注释  
 
 ## 1. VScode 基础
 ### 1.1 平台差异
