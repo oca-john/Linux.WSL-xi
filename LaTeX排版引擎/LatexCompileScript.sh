@@ -5,10 +5,19 @@
 # 0. 帮助文档
 if [[ $1 = "--help" ]] || [[ $1 = "-h" ]]
 then
-    echo "This is an bash program developed by Oca John."
+    echo "This is a bash program developed by Oca_John."
     echo "You can use it to compile a tex file, like this:"
     echo ""
     echo "      lcs filename.tex"
+    echo ""
+    exit 0
+fi
+
+if [[ $1 = "--version" ]] || [[ $1 = "-v" ]]
+then
+    echo ""
+    echo "lcs version is: 0.1 Beta (20210627)"
+    echo "By Oca_John"
     echo ""
     exit 0
 fi
