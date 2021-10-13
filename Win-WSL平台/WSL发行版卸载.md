@@ -10,8 +10,11 @@ cmd中使用wslconfig命令管理wsl子系统
 
 ## 命令参数：
 `/l, /list [/all]`                列出已注册的发行版
+
 `/s, /setdefault <DistroName>`    将该发行版设为默认
+
 `/t, /terminate <DistroName>`     终止该发行版
+
 `/u, /unregister <DistroName>`    取消注册该发行版
 
 
