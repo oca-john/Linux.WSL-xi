@@ -43,4 +43,28 @@
     - b. 配置
     - Ctrl+Shift+P - 搜索`PackageResourceViewer`部分关键字 - 选择“打开资源” - 选择Python（即默认的Python编译系统）
     - 修改`cmd`部分命令
+```json
+{
+    "cmd": ["python", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python",
 
+    "env": {"PYTHONIOENCODING": "utf-8"},
+
+    "windows": {
+        "cmd": ["python", "-u", "$file"],                        // 修改此处
+    },
+
+    "variants":
+    [
+        {
+            "name": "Syntax Check",
+            "cmd": ["python", "-m", "py_compile", "$file"],
+
+            "windows": {
+                "cmd": ["python", "-m", "py_compile", "$file"],    // 修改此处
+            }
+        }
+    ]
+}
+```
