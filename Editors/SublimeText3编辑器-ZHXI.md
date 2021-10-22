@@ -52,7 +52,7 @@
     "env": {"PYTHONIOENCODING": "utf-8"},
 
     "windows": {
-        "cmd": ["python", "-u", "$file"],                        // 修改此处
+        "cmd": ["python", "-u", "$file"],
     },
 
     "variants":
@@ -62,7 +62,7 @@
             "cmd": ["python", "-m", "py_compile", "$file"],
 
             "windows": {
-                "cmd": ["python", "-m", "py_compile", "$file"],    // 修改此处
+                "cmd": ["python", "-m", "py_compile", "$file"],
             }
         }
     ]
