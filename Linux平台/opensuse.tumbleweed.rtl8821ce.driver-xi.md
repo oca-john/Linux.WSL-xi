@@ -1,4 +1,5 @@
 # opensuse.tumbleweed.rtl8821ce.driver-xi
+- By Oca_John <oca-john@hotmail.com>
 
 ## 问题背景：
 
