@@ -1,5 +1,8 @@
 # Vim编辑器-ZHXI
 此Markdown笔记，从个人纸质笔记中再整理而来。
+
+By Oca_John <oca-john@hotmail.com>
+
 源自coolshell博客2011年文章。
 
 
