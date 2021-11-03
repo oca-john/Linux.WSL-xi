@@ -1,5 +1,6 @@
 #!/usr/bin/sh
 # opensuse.tumbleweed.env.init-xi
+# By Oca_John <oca-john@hotmail.com>
 
 # all files are included in suse.leap.preset folder
 # just execute the bash script, and everything will be done
