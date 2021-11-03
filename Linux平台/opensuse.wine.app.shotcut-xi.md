@@ -1,4 +1,5 @@
 # File shoud be saved as .desktop file
+- By Oca_John <oca-john@hotmail.com>
 
 ``` desktop
 [Desktop Entry]
