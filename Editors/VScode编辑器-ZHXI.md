@@ -1,4 +1,5 @@
 # VScode编辑器-ZHXI
+- By Oca_John <oca-john@hotmail.com>
 > `Ctrl + /`, 可快速单行注释（可对多行进行行注释）  
 > `Ctrl + Shift + a`, 可快速多行注释 / 块注释  
 > 块注释需要目标语言支持，某些代码只支持行注释  
