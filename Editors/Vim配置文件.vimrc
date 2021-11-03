@@ -1,4 +1,5 @@
 " VIM 配置文件积累
+" By Oca_John <oca-john@hotmail.com>
 " 常用格式化显示和高亮
 colorscheme slate               " 设置主题配色为 slate (dark)
 set autoindent                  " 自动缩进
