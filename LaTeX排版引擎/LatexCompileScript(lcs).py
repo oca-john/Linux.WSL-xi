@@ -5,7 +5,7 @@
 # 0. 帮助文档
 import sys
 if sys.argv[1] == "--help" or sys.argv[1] == "-h" :
-    print("This is a bash program developed by Oca_John.", "\n")
+    print("This is a bash program developed by Oca_John <oca-john@hotmail.com>.", "\n")
     print("You can use it to compile a tex file, like this:", "\n")
     print("\n")
     print("      python /path/to/lcs.py /path/to/filename.tex", "\n")
