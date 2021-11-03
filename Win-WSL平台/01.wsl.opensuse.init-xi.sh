@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-# wsl.opensuse.init-xi
+# wsl.opensuse.init-xi, By Oca_John <oca-john@hotmail.com>
 # WSL 已支持与 Win 环境中的 exe 应用相互调用
 # 不需要在 WSL 内部安装与 Win 中重复的应用
 
