@@ -9,10 +9,12 @@ By Oca_John <oca-john@hotmail.com>
 ## 1. Vim 最日常的操作
 ### 1.1 Vim 安装
 - sudo zypper in vim
+
 ### 1.2 插入模式
 - `i` 光标前插入，`a` 光标后插入，`esc` 返回编辑模式
 - `x` 删除光标处的单个字符，`dd` 剪切当前行，`p` 粘贴到下一行
-- `:w filename.sh` 存为filename.sh文件，`:wq` 保存并退出，`:q!` 强制退出
+- `:w filename.sh` 存为 filename.sh 文件，`:wq` 保存并退出，`:q!` 强制退出
+
 ### 1.3 移动光标
 - `h, j, k, l` 分别对应 `左、下、上、右`
 
@@ -30,7 +32,7 @@ By Oca_John <oca-john@hotmail.com>
 
 ### 2.3 复制粘贴
 - `dd`  剪切当前行，删除当前行并存入缓存区
-- `2dd` 剪切此后12行
+- `2dd` 剪切此后 12 行
 - `yy`  复制当前行
 - `3yy` 复制此后 3 行
 - `p`   粘贴
@@ -51,6 +53,7 @@ By Oca_John <oca-john@hotmail.com>
 - `? pattern` 向后查找 pattern (? 是 / 的上档符号，意指向上文查找)
 - `n` 光标移至下一处
 - `N` 光标移至上一处 (N 是 n 的上档符号，意指向上文移动光标)
+
 ### 3.2 替换操作
 - `:s/a/b/` 将 a 换为 b (光标后首个)
 - `:s/a/b/g` 将 a 换为 b (本行全部)
