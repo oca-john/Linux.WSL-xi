@@ -70,11 +70,12 @@
 ```
 
 8. Markdown 配置参考以下
+- 用于 Sublime Text 对 Markdown 语法高亮、编辑、图像渲染、浏览器实时预览的扩展。
 ``` md
 1. Install Plugins Below
-   MarkdownEditing
-   MarkdownImages
-   MarkdownPreview
+   Markdown Editing
+   Markdown Images
+   Markdown Preview
    LiveReload
 
 2. Config Markdown Preview
