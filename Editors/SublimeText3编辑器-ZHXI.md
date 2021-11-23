@@ -68,3 +68,24 @@
     ]
 }
 ```
+
+8. Markdown 配置参考以下
+``` md
+1. Install Plugins Below
+   MarkdownEditing
+   MarkdownImages
+   MarkdownPreview
+   LiveReload
+
+2. Config Markdown Preview
+   `ctrl+shift+p`, open the search panel
+   Search "keybindings", push enter to config
+   Input the comand below:
+    `{"keys": ["alt+p"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}}`
+   save, and you can use "alt+p" to preview markdown in browser
+
+3. Config Autoreload
+   In `Preferences -> Package Settings -> Markdown Preview -> Settings`, set as below:
+    `"enable_autoreload": true`
+   `ctrl+shift+p`, input `LiveReload: Enable/disable plug-ins`, enter, select `Simple Reload with delay (400ms)` or `Simple Reload`
+```
