@@ -48,19 +48,15 @@
     "cmd": ["python", "-u", "$file"],
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
     "selector": "source.python",
-
     "env": {"PYTHONIOENCODING": "utf-8"},
-
     "windows": {
         "cmd": ["python", "-u", "$file"],
     },
-
     "variants":
     [
         {
             "name": "Syntax Check",
             "cmd": ["python", "-m", "py_compile", "$file"],
-
             "windows": {
                 "cmd": ["python", "-m", "py_compile", "$file"],
             }
@@ -77,14 +73,12 @@
    Markdown Images
    Markdown Preview
    LiveReload
-
 2. Config Markdown Preview
    `ctrl+shift+p`, open the search panel
    Search "keybindings", push enter to config
    Input the comand below:
     `{"keys": ["alt+p"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}}`
    save, and you can use "alt+p" to preview markdown in browser
-
 3. Config Autoreload
    In `Preferences -> Package Settings -> Markdown Preview -> Settings`, set as below:
     `"enable_autoreload": true`
