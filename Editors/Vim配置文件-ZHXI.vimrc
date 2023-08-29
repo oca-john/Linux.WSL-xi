@@ -1,9 +1,9 @@
 " VIM 配置文件积累
 " By Oca_John <oca-john@hotmail.com>
-" #########################################
-" 基础配置
-" 常用格式化显示和高亮
-colorscheme slate               " 设置主题配色为 slate (dark)
+
+"########## >> 格式化显示与高亮 << ################
+" 在命令模式 ':colorscheme Tab' 查看自带了哪些主题配色
+colorscheme desert              " 主题配色 desert, industry, shine(light), slate
 set autoindent                  " 自动缩进
 set backspace=2                 " 启用退格键 (删除键不可用问题)
 set cindent                     " 使用 C 语法缩进
@@ -24,8 +24,7 @@ set softtabstop=4               " 软制表符设为 4 格
 set tabstop=4                   " 制表符设为 4 格
 set vb t_vb=                    " 关闭提示音
 
-" #########################################
-" Python执行代码
+"########## >> Python执行代码 << ################
 filetype plugin on
 " 按 F5 执行当前 Python 代码"
 map <F5> :call PRUN()<CR>
@@ -36,9 +35,11 @@ func! PRUN()
     endif
 endfunc
 
+"########## >> 插件管理 with Vim-Plug << ##########
+call plug#begin('~/.vim/plugged')
+call plug#end()
 
-" #########################################
-" 其他平台额外配置
+"########## >> 其他平台额外配置 << #################
 " gvim 设置默认工作路径
 exec 'cd ' . fnameescape('D:\Users\oca\Documents')
 
